@@ -3,9 +3,13 @@ html
   head
    title Signup Email || #{yield :title}
 
+   link href=:'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Actor' rel=:'stylesheet' type=:'text/css'
+
    = stylesheet_link_tag    "application", :media => "all"
    = javascript_include_tag "application"
    = csrf_meta_tags
+
+   script type=:"text/javascript" src=:"/assets/site.js"
 
    = render "shim"
 
@@ -14,14 +18,14 @@ html
    = render "header"
    
    #content
-    
-     .row-fluid
+    .row-fluid
+     .span12
       #main.span8
        = yield
 
       = render "sidebar"
 
-     
+   = render "footer"
 
 
 

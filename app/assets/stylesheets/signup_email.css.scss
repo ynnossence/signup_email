@@ -5,16 +5,24 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
-.txt-right{ text-align: right; }
+body{ font-family: 'Source Sans Pro'; }
 
-#header{ background: #efefef; border-bottom: #bcbcbc 1px solid; padding: 10px 0; }
-#logo{ margin: 0 0 0 20px; }
+/** Header **/
+.txt-right{ text-align: right; }
+.txt-center{ text-align: center;  }
+
+#header{ background: #efefef url('/assets/header-bg.png') no-repeat bottom; border-bottom: #bcbcbc 1px solid; padding: 10px 0; }
+#logo { margin: 0; }
+#logo a{ margin: 18px 0 10px 18px; width: 98px; height: 57px; display: block; text-indent: -9999em; background: url('/assets/logo.png') no-repeat; }
 
 .user-info{ text-align: center; }
 .user-pic{ border: #2c2c2c 1px solid; width: 58px; height: 58px; margin: 0 auto; }
 .user-name { text-align: center; }
 .user-name a{ color: #808080; }
 
+
+.login-btn{ margin-top: 25px; margin-right: 18px; }
+.login-btn .btn{ font-size: 20px; font-family: 'Source Sans Pro'; color: #777777; font-weight: 600; padding-top: 5px!important; padding-bottom: 7px!important; }
 
 #content #main{ padding: 0 20px; }
 
@@ -23,12 +31,16 @@
 #signup-form input[type="email"]{ width: 90%; }
 #signup-form input[type="submit"]{ margin-right: 35px; }
 
+
+
+
 /** Sidebar **/
-#sidebar{ background: #f7f7f7 url('/assets/sidebar-bg.png') repeat-y left; }
+#sidebar{ min-height: 500px; background: #f7f7f7 url('/assets/sidebar-bg.png') repeat-y left; font-size: 15px; }
 
-.side-wrap{ padding-left: 20px; padding-right: 20px; }
+.side-wrap{ padding-left: 10px; padding-right: 10px; }
 
-#sidebar .sidebar-ttl{ color: #1d3e84; }
+#sidebar .sidebar-ttl{ color: #4066a3; font-size: 18px; font-weight: 600; border-bottom: #e0e0e0 1px solid; margin: 0 -10px 10px; padding: 0 15px; }
+
 #sidebar .widget{ 
 	border: #bdbdbd 1px solid; 
 	-webkit-border-radius: 7px;
@@ -36,12 +48,20 @@
 	border-radius: 7px;
 	margin-bottom: 10px;
 }
-#sidebar .widget-title{ padding: 0 10px 10px; border-bottom: #bdbdbd 1px solid;  }
-#sidebar .widget-title i{ float: right; margin: 5px 0 0; }
-#sidebar .widget-content{ padding: 15px 20px; }
+#sidebar .widget-title{ padding: 0 10px 12px 45px; border-bottom: none; background: url('/assets/checkbox.png') no-repeat 10px 0; cursor: pointer; color: #767676; margin-bottom: 0; }
+
+#sidebar .widget-title a{ display: block; }
+#sidebar .widget-title i{ float: right; margin: 0 0 0; width: 24px; height: 24px; background: url('/assets/icon-question-inactive.png') no-repeat; }
+
+#sidebar .widget-title:hover{ color: #5175ac!important; }
+#sidebar .widget-title:hover i ,#sidebar .widget.active .widget-title i{  background: url('/assets/icon-question.png') no-repeat;}
+
+#sidebar .active .widget-title{ border-bottom: #bdbdbd 1px solid; color: #5175ac; padding-bottom: 12px; }
+
+#sidebar .widget-content{ padding: 15px 20px; display: none; color: #767676; }
 #sidebar .widget-title input[type="checkbox"]{ margin: 3px 10px 0 0!important; }
 
-#sidebar .notext .widget-title{ margin-bottom: 0; border-bottom: none; padding-bottom: 12px; }
+
 
 #sidebar label.checkbox.inline{ 
 	font-size: 18px;
@@ -50,4 +70,18 @@
     margin: 0;
     cursor: pointer; 
 }
+
+
+
+/** Footer **/
+#footer{ border-top: #c7c7c7 1px solid; padding: 10px 0; }
+#footer a{ color: #426eab; text-decoration: none; }
+#footer a:hover{ text-decoration: none; }
+#footer .footer-wrap{ padding: 0 20px; }
+#footer .copy{ font-weight: 600; color: #426eab; }
+
+.foot-nav{ }
+.foot-nav ul{ margin: 0; padding: 0; list-style: none; }
+.foot-nav ul li{ display: inline; margin-left: 20px; font-size: 16px; }
+
 
