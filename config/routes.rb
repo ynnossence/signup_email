@@ -1,4 +1,5 @@
 SignupEmail::Application.routes.draw do
+  
   get "signup_email/index"
 
   # The priority is based upon order of creation:

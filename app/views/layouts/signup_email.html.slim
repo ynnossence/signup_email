@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+   title Signup Email || #{yield :title}
+
+   = stylesheet_link_tag    "application", :media => "all"
+   = javascript_include_tag "application"
+   = csrf_meta_tags
+
+   = render "shim"
+
+  body
+   
+   = render "header"
+   
+   #content
+    
+     .row-fluid
+      #main.span8
+       = yield
+
+      = render "sidebar"
+
+     
+
+
+
+
+
