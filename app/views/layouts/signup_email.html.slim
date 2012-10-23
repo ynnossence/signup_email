@@ -18,13 +18,13 @@ html
    = render "header"
    
    #content
-    .row-fluid
+    .row-fluid.clearfix
      .span12
       #main.span8
        = yield
 
       = render "sidebar"
-     .push
+    .push
 
    = render "footer"
 

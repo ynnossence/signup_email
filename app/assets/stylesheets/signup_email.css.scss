@@ -30,10 +30,16 @@ body{ font-family: 'Source Sans Pro'; }
 	height: 100%;
 	margin: 0 auto -42px;
 }
+
+#content .row-fluid .span12, #content .row-fluid{ height: 100%; }
+#content .row-fluid #sidebar{ height: 100%; }
+
 #content #main{ padding: 0 0 0 20px; }
 
 #content #main h1{ color: #265297; margin-bottom: 0px; line-height: 36px; font-weight: 600; }
 #content #main h4{ color: #4e77b0; }
+#content div{ position: relative; }
+
 
 #signup-form fieldset{ margin-bottom: 5px; }
 #signup-form label{ font-weight: 600; color: #666; font-size: 18px; cursor: pointer; margin-bottom: 3px; }
@@ -193,7 +199,7 @@ h3.email-ttl{ margin-top: -4px; }
 
 
 /** Sidebar **/
-#sidebar{ min-height: 500px; background: #f7f7f7 url('/assets/sidebar-bg.png') repeat-y left; font-size: 15px; }
+#sidebar{ background: #f7f7f7 url('/assets/sidebar-bg.png') repeat-y left; font-size: 15px; }
 
 .side-wrap{ padding-left: 10px; padding-right: 10px; }
 
@@ -232,8 +238,8 @@ h3.email-ttl{ margin-top: -4px; }
 
 
 /** Footer **/
-.push{ clear: both; }
-#footer{ border-top: #c7c7c7 1px solid; padding: 10px 0; clear: both; }
+.push{ clear: both; height: 42px; }
+#footer{ height: 21px; clear: both; border-top: #c7c7c7 1px solid; padding: 10px 0; clear: both; }
 #footer a{ color: #426eab; text-decoration: none; }
 #footer a:hover{ text-decoration: underline; }
 #footer .footer-wrap{ padding: 0 20px; }

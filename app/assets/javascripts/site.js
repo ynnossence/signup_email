@@ -23,17 +23,11 @@ $(function(){
   	$(this).parent().removeClass('active');
   })
   
-  var mainwid = $('#content #main').height();
-  var sidewid = $('#content #sidebar').height();
+  var mainwid = $('#content').height();
 
-if(mainwid > sidewid){
+
   $('#content #sidebar').css({
     'height' : mainwid + 'px'
   });
-} else{
-  $('#content #sidebar').css({
-    'height' : sidewid + 'px'
-  });
-}
 
 });
