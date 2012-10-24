@@ -11,14 +11,15 @@ body{ font-family: 'Source Sans Pro'; }
 .txt-right{ text-align: right; }
 .txt-center{ text-align: center;  }
 
-#header{ background: #efefef url('/assets/header-bg.png') no-repeat bottom; border-bottom: #bcbcbc 1px solid; padding: 10px 0; }
+#header{ background: #efefef url('/assets/header-bg.png') repeat bottom; border-bottom: #bcbcbc 1px solid; padding: 10px 0; }
 #logo { margin: 0; }
 #logo a{ margin: 18px 0 10px 18px; width: 98px; height: 57px; display: block; text-indent: -9999em; background: url('/assets/logo.png') no-repeat; }
 
-.user-info{ text-align: center; }
+.user-info{ text-align: center; margin: 5px 18px 0 0; }
 .user-pic{ border: #2c2c2c 1px solid; width: 58px; height: 58px; margin: 0 auto; }
-.user-name { text-align: center; }
-.user-name a{ color: #808080; }
+.user-pic img{ max-width: 58px; max-height: 58px; }
+.user-info { text-align: center; }
+.user-info a{ color: #888888; }
 
 
 .login-btn{ margin-top: 25px; margin-right: 18px; }

@@ -1,5 +1,17 @@
 SignupEmail::Application.routes.draw do
   
+  get "account_details/default"
+
+  get "account_details/nodata"
+
+  get "account_details/edit"
+
+  get "account_details/confirmation"
+
+  get "account_details/editanother"
+
+  get "account_details/editinfo"
+
   get "signup_email/index"
 
   # The priority is based upon order of creation:

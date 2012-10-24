@@ -1,0 +1,30 @@
+// Place all the styles related to the AccountDetails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.top-nav{ margin: 0 auto; text-align: center; }
+.top-nav ul{ list-style: none; margin: 0; padding: 0; }
+.top-nav li{ display: inline-block; margin: 0 5%; }
+.top-nav li span.icon{ width: 62px; height: 63px; display: block; margin-bottom: 10px; margin: 0 auto; }
+.top-nav li a{ color: #888888; text-decoration: none; text-align: center; }
+
+.top-nav .nav01 .icon{ background: url('/assets/icon-dash.png') no-repeat top; }
+.top-nav .nav02 .icon{ background: url('/assets/icon-trans.png') no-repeat top; }
+.top-nav .nav03 .icon{ background: url('/assets/icon-lang.png') no-repeat top; }
+.top-nav .nav04 .icon{ background: url('/assets/icon-account.png') no-repeat top; }
+
+.top-nav li a:hover{ color: #265297; }
+.top-nav li a:hover .icon, .top-nav li.active a .icon{ background-position: bottom; }
+.top-nav li.active a{ color: #265297; font-weight: bold; }
+
+
+#mid-inner{ padding: 25px 0 0 0; }
+#mid-inner .mid-item{ margin-bottom: 30px; }
+#mid-inner .box{ padding: 10px; border: #cccccc 1px solid; color: #aaaaaa; font-size: 14px; }
+#mid-inner .box .current-balance{ color: #265297; font-size: 20px; font-weight: 600; margin-bottom: 5px; }
+#mid-inner .box .bank{ font-weight: 600; font-size: 18x; margin-right: 30px; }
+#mid-inner .box .link1{ text-decoration: underline; color: #2e83d0; }
+
+.left-ttl h2{ text-align: right; color: #7b9c52; font-size: 23px; line-height: 24px; margin: 10px 0 0; padding: 0; }
