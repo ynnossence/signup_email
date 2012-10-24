@@ -14,6 +14,27 @@ $(function(){
   });
 */
 
+  var mainwid = $('#content').height();
+
+
+  $('#content #sidebar').css({
+    'height' : mainwid + 'px'
+  });
+
+ var resizeTimer;
+  $(window).resize(function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(fixHeight, 1);
+  });
+  
+  // Height Func
+  function fixHeight() {
+    
+    $('#content #sidebar').css({
+      'height' : mainwid + 'px'
+    });
+  };
+
   $('#sidebar-accordion .active .widget-content').show();
   $('#sidebar-accordion .widget-title').toggle(function(){
   	$(this).next().slideDown(); 
@@ -21,13 +42,8 @@ $(function(){
   },function(){
   	$(this).next().slideUp();  
   	$(this).parent().removeClass('active');
-  })
-  
-  var mainwid = $('#content').height();
-
-
-  $('#content #sidebar').css({
-    'height' : mainwid + 'px'
   });
+  
+  
 
 });
