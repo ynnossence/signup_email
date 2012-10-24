@@ -261,14 +261,14 @@ h3.email-ttl{ margin-top: -4px; }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
- 
+  .login-btn .btn{ font-size: 14px; }
   
   
 }
- 
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  
+  .login-btn .btn{ font-size: 14px; }
   
 }
  
