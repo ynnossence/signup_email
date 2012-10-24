@@ -15,11 +15,10 @@ html
 
   body
    
-   = render "header"
-   
    #content
+    = render "header"
     .row-fluid.clearfix
-     .span12
+     .span12.main-wrap
       #main.span8
        = yield
 

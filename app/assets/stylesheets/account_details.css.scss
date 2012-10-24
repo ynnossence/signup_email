@@ -22,9 +22,34 @@
 
 #mid-inner{ padding: 25px 0 0 0; }
 #mid-inner .mid-item{ margin-bottom: 30px; }
-#mid-inner .box{ padding: 10px; border: #cccccc 1px solid; color: #aaaaaa; font-size: 14px; }
+#mid-inner .box{ padding: 12px; border: #cccccc 1px solid; color: #aaaaaa; font-size: 14px; position: relative; }
 #mid-inner .box .current-balance{ color: #265297; font-size: 20px; font-weight: 600; margin-bottom: 5px; }
-#mid-inner .box .bank{ font-weight: 600; font-size: 18x; margin-right: 30px; }
+#mid-inner .box .bank{ font-weight: 600; font-size: 18x; margin: 0; }
+#mid-inner .box .bank span{ margin-right: 30px; float: left; }
 #mid-inner .box .link1{ text-decoration: underline; color: #2e83d0; }
+#mid-inner .nopad{ padding: 0; }
 
-.left-ttl h2{ text-align: right; color: #7b9c52; font-size: 23px; line-height: 24px; margin: 10px 0 0; padding: 0; }
+.left-ttl .btn{  font-size: 16px!important; color: #777777!important; font-family: 'Source Sans Pro'; font-weight: 600; padding: 3px 20px!important; }
+.btn-withdraw{ font-size: 18px!important; color: #777777!important; font-family: 'Source Sans Pro'; font-weight: 600; padding: 5px 10px 7px!important; margin-top: 5px; margin-left: 15px; }
+.wrap-wd span{ padding-top: 12px; font-size: 16px; float: left; }
+.left-ttl h2{ text-align: right; color: #7b9c52; font-size: 23px; line-height: 24px; margin: 10px 0 10px; padding: 0; }
+.btn-small{ font-size: 15x!important; color: #777777!important; font-family: 'Source Sans Pro'; font-weight: 600; }
+
+#mid-inner .box .account-pic{ float: left; margin: -12px 20px -12px -12px; }
+#mid-inner .box .change-pass{ float: right; margin: 15px 0 0 0; }
+
+#mid-inner .box ul.info{ padding: 0; margin: 0; list-style: none; }
+#mid-inner .box ul.info li{ margin-bottom: 5px; }
+#mid-inner .box ul.info h3{ color: #265297; font-size: 24px; font-weight: 600; line-height: 22px; padding: 0; margin: 0; }
+#mid-inner .box ul.info h4{ color: #406cab; font-size: 16px; font-weight: 600; line-height: 18px; padding: 0; margin: 0; }
+#mid-inner .box ul.info a{ font-size: 16px; text-decoration: none; font-weight: 600; color: #406cab; }
+#mid-inner .box ul.info .email{ margin-bottom: 25px; }
+#mid-inner .box ul.info span.address{ padding-left: 40px; }
+
+
+.box-tab{ width: 100%; color: #555555; font-family: 'Source Sans Pro'; font-size: 16px; }
+.box-tab tr td{ padding: 5px 10px; text-align: right; }
+.box-tab tr td.col01{  padding: 5px 20px; }
+.box-tab tr{ border-bottom: #e5e5e5 1px solid; }
+.box-tab tr.last{ border: none; }
+

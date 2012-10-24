@@ -32,8 +32,7 @@ body{ font-family: 'Source Sans Pro'; }
 	margin: 0 auto -42px;
 }
 
-#content .row-fluid .span12, #content .row-fluid{ height: 100%; }
-#content .row-fluid #sidebar{ height: 100%; }
+#content .row-fluid #sidebar, .main-wrap{ height: 100%; }
 
 #content #main{ padding: 0 0 0 20px; }
 
@@ -225,7 +224,6 @@ h3.email-ttl{ margin-top: -4px; }
 
 #sidebar .widget-content{ padding: 15px 20px; display: none; color: #767676; }
 #sidebar .widget-title input[type="checkbox"]{ margin: 3px 10px 0 0!important; }
-
 
 
 #sidebar label.checkbox.inline{ 
