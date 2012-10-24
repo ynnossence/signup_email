@@ -40,31 +40,83 @@
    table.box-tab
     tr
      td.col01 
-      |34.00 USD
+      strong 34.00 
+      | USD
      td.col02 
       |12 January 2012
      td.col03
       a.btn.btn-small href=:"#moreinfo" More Info
     tr
      td.col01 
-      |1,534,392.25 USD
+      strong 1,534,392.25 
+      | USD
      td.col02 
       |12 February 2012
      td.col03
       a.btn.btn-small href=:"#moreinfo" More Info
     tr
      td.col01 
-      |0.01 USD
+      strong 0.01 
+      |USD
      td.col02 
       |12 March 2012
      td.col03
       a.btn.btn-small href=:"#moreinfo" More Info
     tr.last
      td.col01 
-      |12,334.20 USD
+      strong 12,334.20 
+      |USD
      td.col02 
       |12 April 2012
      td.col03
       a.btn.btn-small href=:"#moreinfo" More Info
+
+.row-fluid.mid-item
+ .span2.left-ttl
+  h2 Invoices
+ .span10
+  .box.clearfix.nopad
+   table.box-tab
+    tr
+     td.col01 
+      strong Invoice 12345
+     td.col02 
+      |12 January 2012
+     td.col03
+      a.btn.btn-small href=:"#download" Download
+    tr
+     td.col01 
+      strong Invoice 40392
+     td.col02 
+      |12 February 2012
+     td.col03
+      a.btn.btn-small href=:"#download" Download
+    tr
+     td.col01 
+      strong Invoice 14123
+     td.col02 
+      |12 March 2012
+     td.col03
+      a.btn.btn-small href=:"#download" Download
+    tr.last
+     td.col01 
+      strong Invoice 32412
+     td.col02 
+      |12 April 2012
+     td.col03
+      a.btn.btn-small href=:"#download" Download
    
-   
+.row-fluid.mid-item
+ .span2.left-ttl
+  h2 Preferences
+ .span10
+  .box.clearfix.pref
+   p 
+    input#ch01.cb type="checkbox"
+    label for=:"ch01" Send email notifications for community translations.
+   p 
+    input#ch02.cb type="checkbox"
+    label for=:"ch02" Send email notifications for translation reviews.
+   p.last 
+    input#ch03.cb type="checkbox"
+    label for=:"ch03" Send email notifications for pro translations.

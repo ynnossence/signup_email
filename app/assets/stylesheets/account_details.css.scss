@@ -48,8 +48,11 @@
 
 
 .box-tab{ width: 100%; color: #555555; font-family: 'Source Sans Pro'; font-size: 16px; }
-.box-tab tr td{ padding: 5px 10px; text-align: right; }
+.box-tab tr td{ padding: 5px 10px; text-align: right; width: 33.33%; }
 .box-tab tr td.col01{  padding: 5px 20px; }
 .box-tab tr{ border-bottom: #e5e5e5 1px solid; }
 .box-tab tr.last{ border: none; }
 
+.cb{ float: left; margin-right: 10px!important; }
+.pref label{ color: #555555; font-size: 16px; }
+.pref p.last{ margin-bottom: 0; }
