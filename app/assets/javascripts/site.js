@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
 /*
   var $panel = $('#sidebar-accordion .widget-content').hide();
   var $allPanels = $('#sidebar-accordion .widget');
@@ -14,12 +14,11 @@ $(function(){
   });
 */
 
-  var mainwid = $('#content').height();
+/*var mainwid = $('#content').height();
 
-
-  $('#content #sidebar').css({
-    'height' : mainwid + 'px'
-  });
+    $('#content #sidebar').css({
+      'height' : mainwid + 'px'
+    });
 
  var resizeTimer;
   $(window).resize(function() {
@@ -27,13 +26,26 @@ $(function(){
       resizeTimer = setTimeout(fixHeight, 1);
   });
   
-  // Height Func
-  function fixHeight() {
-    
+   function fixHeight() {
+    var mainwid = $('#content').height();
+
     $('#content #sidebar').css({
-      'height' : mainwid + 'px'
+      'height' : '100%'
     });
-  };
+
+  };*/
+
+  var mainwid = $('#content').height();
+
+  $('#content #sidebar').css({
+    'height' : mainwid + 'px'
+  });
+
+  $(window).resize(function(){ 
+    console.log(mainwid);
+  });
+
+
 
   $('#sidebar-accordion .active .widget-content').show();
   $('#sidebar-accordion .widget-title').toggle(function(){
