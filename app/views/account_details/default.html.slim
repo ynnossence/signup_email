@@ -2,24 +2,71 @@
  .span2.left-ttl
   h2 Balance
  .span10
-  .box.clearfix
    .def
-    .pull-left
-     p.current-balance Current Balance: 1,000,000.00 USD
-     p.bank 
-      span ANZ Bank
-      a.link1 href=:"#change" Change your withdrawal method
-    .pull-right.wrap-wd
-     a.btn.btn-withdraw.pull-right href=:"#withdraw" Withdraw
-     span Transaction Fee: 3.20 USD
+    .box.clearfix
+     .pull-left
+      p.current-balance Current Balance: 1,000,000.00 USD
+      p.bank 
+       span ANZ Bank
+       = link_to "Change your withdrawal method", {:controller => "account_details", :action => "editinfo"} , :class => "link1" 
+     .pull-right.wrap-wd
+      = link_to "Withdraw", {:controller => "account_details", :action => "confirmation"} , :class => "btn btn-mid pull-right" 
+      span Transaction Fee: 3.20 USD
    .dataoff
-    a.btn.btn-withdraw href=:"#reg" Register a Payment Method
+    .box.clearfix
+     a.btn.btn-mid href=:"#reg" Register a Payment Method
+   .editcontent
+    .box.clearfix
+     .pull-left
+      p.current-balance Are you sure you would like to withdraw?
+      p.bank 
+       span You will be charged a transaction fee of 3.20 USD
+     .pull-right.wrap-wd
+      a.btn.btn-mid.btn-blue.pull-right href=:"#withdraw" Withdraw 1,000,000.00 USD
+      a.btn.btn-mid.pull-right href=:"#cancel" Cancel
+   .confcontent
+    .box.clearfix
+     .pull-left
+      p.current-balance Are you sure you would like to withdraw?
+      p.bank 
+       span You will be charged a transaction fee of 3.20 USD
+     .pull-right.wrap-wd
+      a.btn.btn-mid.btn-blue.pull-right href=:"#withdraw" Withdraw 1,000,000.00 USD
+      a.btn.btn-mid.pull-right href=:"#cancel" Cancel
+   .editinfocontent
+    .box.clearfix
+     .span8
+      form
+       fieldset
+        label for=:bname Bank Name:
+        input type=:text name=:bname id=:bname
+       fieldset
+        label for=:account_num Account Number:
+        input type=:text name=:account_num id=:account_num
+       fieldset
+        label for=:bsb BSB:
+        input type=:text name=:bsb id=:bsb
+       fieldset
+        label for=:scode SWIFT Code:
+        input type=:text name=:scode id=:scode
+       fieldset
+        label for=:baddress Bank Address:
+        input type=:text name=:baddress id=:baddress
+       fieldset
+        input.btn.btn-save.pull-right type=:submit value=:Save  
+        input.btn.btn-cancel.pull-right type=:submit value=:Cancel
 
-.row-fluid.mid-item.accountinfo.editstate
+     .span4
+      h4 What are Payment Methods
+      p A payment method is a nominated bank account.
+      p All payment methods conform to international wire transfer standards.
+      p To find out the details for your account, contact your bank. 
+
+.row-fluid.mid-item.accountinfo
   .span2.left-ttl
    h2 Account Info
    p 
-    a.btn.btn-edit.pull-right href=:"#edit" Edit
+    = link_to "Edit", {:controller => "account_details", :action => "edit"} , :class => "btn btn-edit pull-right" 
   .span10
    .def
     .box.clearfix
@@ -78,7 +125,23 @@
           input.coun type=:text value=:Australia name=:country id=:country
         fieldset.clearfix
          input.btn.btn-save.pull-right type=:submit value=:Save  
-         input.btn.btn-cancel.pull-right type=:submit value=:Cancel  
+         input.btn.btn-cancel.pull-right type=:submit value=:Cancel
+   .changepass
+    .box.clearfix
+     .col.col01.clearfix
+      label for=:oldpass Original Password:
+      input type=:password name=:oldpass id=:oldpass
+     .col.col02.clearfix
+      label for=:newpass New Password:
+      input type=:password name=:newpass id=:newpass
+     .col.col03.clearfix
+      label for=:newpass2 Confirm New Password:
+      input type=:password name=:newpass2 id=:newpass2
+     .col.col04
+       p 
+        a.btn.btn-blue.btn-small href=:"#change" Change
+       p 
+        a.btn.btn-small href=:"#cancel" Cancel
 
 .row-fluid.mid-item.withdrawals
   .span2.left-ttl

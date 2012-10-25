@@ -27,13 +27,15 @@
 #mid-inner .box .bank{ font-weight: 600; font-size: 18x; margin: 0; }
 #mid-inner .box .bank span{ margin-right: 30px; float: left; }
 #mid-inner .box .link1{ text-decoration: underline; color: #2e83d0; }
+#mid-inner .box h4{ color: #426eab; }
+
 #mid-inner .nopad{ padding: 0; }
 
 .left-ttl .btn{  font-size: 16px!important; color: #777777!important; font-family: 'Source Sans Pro'; font-weight: 600; padding: 3px 20px!important; }
-.btn-withdraw{ font-size: 18px!important; color: #777777!important; font-family: 'Source Sans Pro'; font-weight: 600; padding: 5px 10px 7px!important; margin-top: 5px; margin-left: 15px; }
+.btn-mid{ font-size: 18px!important; color: #777777!important; font-family: 'Source Sans Pro'; font-weight: 600; padding: 5px 10px 7px!important; margin-top: 5px; margin-left: 15px; }
 .wrap-wd span{ padding-top: 12px; font-size: 16px; float: left; }
 .left-ttl h2{ text-align: right; color: #7b9c52; font-size: 23px; line-height: 24px; margin: 10px 0 10px; padding: 0; }
-.btn-small{ font-size: 15x!important; color: #777777!important; font-family: 'Source Sans Pro'; font-weight: 600; }
+.btn-small{ font-size: 15x!important; color: #777777!important; font-family: 'Source Sans Pro'; font-weight: 600; border-color: #aaaaaa; padding: 3px 9px!important; }
 
 #mid-inner .box .account-pic{ float: left; margin: -12px 20px -12px -12px; }
 #mid-inner .box .change-pass{ float: right; margin: 15px 0 0 0; }
@@ -62,12 +64,12 @@
 .dataoff p.note{ margin: 0; font-size: 16px; font-weight: 600; }
 
 
-.editcontent{ display: none; }
-.editcontent .box{ background: #f5f7fa; border: #cbd6e6 1px solid!important; }
+.editcontent,.confcontent, .changepass,.editinfocontent{ display: none; }
+.editcontent .box, .changepass .box, .editinfocontent .box, .confcontent .box{ background: #f5f7fa; border: #cbd6e6 1px solid!important; }
 .editcontent .span9{ margin-right: 2.5641%; margin-left: 0!important; }
 .addphoto{ float: left; width: 150px; height: 150px; margin: 0 20px 0 0; background: url('/assets/addphoto.jpg') no-repeat; }
 
-#editaccount-form .tax-wrap{ margin-bottom: 20px; }
+#editaccount-form .taxwrap{ margin-bottom: 30px; }
 #editaccount-form{ margin-left: -10px; padding-right: 30px; }
 #editaccount-form .col{ float: left; }
 #editaccount-form .col1,
@@ -80,9 +82,30 @@
 	border-radius: 5px;
 }
 
+.btn-cancel{ margin-right: 10px; color: #818181; font-family: 'Source Sans Pro'; font-weight: 600; border-color: #aaaaaa; }
+#editaccount-form .btn-save{ margin-right: 47px; color: #fff; border-color: #265297; }
+
+.changepass .col label, .editinfocontent label{ color: #666666; display: block; margin-bottom: 2px; cursor: pointer; font-size: 17px; font-weight: 600; }
+.changepass .col{ width: 28%; float: left; display: inline; margin-right: 15px; }
+.changepass .btn{ width: 50px; }
+.changepass .col input[type="password"]{ width: 92%!important; }
+.changepass .col03{ margin-right: 0; }
+.changepass .col04{ width: auto; float: right; padding-right: 0; margin-right: 0!important; }
+.changepass .col04 p:last-child{ margin-bottom: 0; }
+
+.editinfocontent p{ font-size: 16px; }
+.editinfocontent .btn-save{ margin-right: 40px; }
+
 /** Class States **/
 .nodatastate{}
 .nodatastate .def,
-.editstate .def{ display: none; }
+.editstate .def,
+.confirmstate .def,
+.changestate .def,
+.editinfostate .def{ display: none; }
 .nodatastate .dataoff,
-.editstate .editcontent{ display: block; }
+.editstate .editcontent,
+.confirmstate .confcontent,
+.changestate .changepass,
+.editinfostate .editinfocontent,
+.editstate .editinfocontent{ display: block; }

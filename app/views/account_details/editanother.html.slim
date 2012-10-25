@@ -1,4 +1,4 @@
-.row-fluid.mid-item.balance.nodatastate
+.row-fluid.mid-item.balance
  .span2.left-ttl
   h2 Balance
  .span10
@@ -8,7 +8,7 @@
       p.current-balance Current Balance: 1,000,000.00 USD
       p.bank 
        span ANZ Bank
-       = link_to "Change your withdrawal method", {:controller => "account_details", :action => "editinfo"} , :class => "link1"
+       = link_to "Change your withdrawal method", {:controller => "account_details", :action => "editinfo"} , :class => "link1" 
      .pull-right.wrap-wd
       = link_to "Withdraw", {:controller => "account_details", :action => "confirmation"} , :class => "btn btn-mid pull-right" 
       span Transaction Fee: 3.20 USD
@@ -62,11 +62,9 @@
       p All payment methods conform to international wire transfer standards.
       p To find out the details for your account, contact your bank. 
 
-.row-fluid.mid-item.accountinfo
+.row-fluid.mid-item.accountinfo.changestate
   .span2.left-ttl
    h2 Account Info
-   p 
-    = link_to "Edit", {:controller => "account_details", :action => "edit"} , :class => "btn btn-edit pull-right" 
   .span10
    .def
     .box.clearfix
@@ -143,7 +141,7 @@
        p 
         a.btn.btn-small href=:"#cancel" Cancel
 
-.row-fluid.mid-item.withdrawals.nodatastate
+.row-fluid.mid-item.withdrawals
   .span2.left-ttl
    h2 Withdrawals
   .span10
@@ -186,7 +184,7 @@
     .box.clearfix
      p.note Withdrawals you make will appear here 
 
-.row-fluid.mid-item.invoices.nodatastate
+.row-fluid.mid-item.invoices
  .span2.left-ttl
   h2 Invoices
  .span10
