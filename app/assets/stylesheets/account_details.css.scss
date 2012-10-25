@@ -56,3 +56,33 @@
 .cb{ float: left; margin-right: 10px!important; }
 .pref label{ color: #555555; font-size: 16px; }
 .pref p.last{ margin-bottom: 0; }
+
+
+.dataoff{ display: none; text-align: center; }
+.dataoff p.note{ margin: 0; font-size: 16px; font-weight: 600; }
+
+
+.editcontent{ display: none; }
+.editcontent .box{ background: #f5f7fa; border: #cbd6e6 1px solid!important; }
+.editcontent .span9{ margin-right: 2.5641%; margin-left: 0!important; }
+.addphoto{ float: left; width: 150px; height: 150px; margin: 0 20px 0 0; background: url('/assets/addphoto.jpg') no-repeat; }
+
+#editaccount-form .tax-wrap{ margin-bottom: 20px; }
+#editaccount-form{ margin-left: -10px; padding-right: 30px; }
+#editaccount-form .col{ float: left; }
+#editaccount-form .col1,
+#editaccount-form .col2{ width: 25%; margin-right: 25px; }
+#editaccount-form .col2{ margin-right: 0; }
+#editaccount-form .col3{ width: 35%; float: right; margin-right: 40px; }
+#editaccount-form .col3 input[type="text"]{  
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/** Class States **/
+.nodatastate{}
+.nodatastate .def,
+.editstate .def{ display: none; }
+.nodatastate .dataoff,
+.editstate .editcontent{ display: block; }

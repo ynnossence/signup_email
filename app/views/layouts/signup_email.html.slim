@@ -11,7 +11,7 @@ html
 
    script type=:"text/javascript" src=:"/assets/site.js"
 
-   = render "shim"
+   = render "common/shim"
 
   body
    
@@ -22,10 +22,10 @@ html
       #main.span8
        = yield
 
-      = render "sidebar"
+      = render "common/sidebar"
     .push
 
-   = render "footer"
+   = render "common/footer"
 
 
 
