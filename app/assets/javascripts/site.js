@@ -38,12 +38,8 @@ $('#content #sidebar,#content #main').css({
 
   };
 
-
-
-
-
   $('#sidebar-accordion .active .widget-content').show();
-  $('#sidebar-accordion .widget-title').toggle(function(){
+  $('#sidebar-accordion .default .widget-title').toggle(function(){
   	$(this).next().slideDown(); 
   	$(this).parent().addClass('active');
   },function(){
@@ -51,6 +47,7 @@ $('#content #sidebar,#content #main').css({
   	$(this).parent().removeClass('active');
   });
   
+  $('#sidebar-accordion .checked .widget-content').hide();
   
 
 });

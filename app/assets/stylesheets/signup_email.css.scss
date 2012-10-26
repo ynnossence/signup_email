@@ -10,6 +10,8 @@ body{ font-family: 'Source Sans Pro'; }
 /** Header **/
 .txt-right{ text-align: right; }
 .txt-center{ text-align: center;  }
+.fl{ float: left; }
+.fr{ float: right; }
 
 #header{ background: #efefef url('/assets/header-bg.png') repeat bottom; border-bottom: #bcbcbc 1px solid; padding: 10px 0; }
 #logo { margin: 0; }
@@ -272,9 +274,13 @@ h3.email-ttl{ margin-top: -4px; }
 #sidebar .widget-title i{ float: right; margin: 0 0 0; width: 24px; height: 24px; background: url('/assets/icon-question-inactive.png') no-repeat; }
 
 #sidebar .widget-title:hover{ color: #5175ac!important; }
+#sidebar .checked .widget-title:hover{ color: #fff!important; }
 #sidebar .widget-title:hover i ,#sidebar .widget.active .widget-title i{  background: url('/assets/icon-question.png') no-repeat;}
 
-#sidebar .active .widget-title{ border-bottom: #bdbdbd 1px solid; color: #5175ac; padding-bottom: 12px; }
+#sidebar .checked{ background: #91b066; }
+#sidebar .active .widget-title{ border-bottom: #bdbdbd 1px solid; color: #5175ac; padding-bottom: 12px; text-decoration: underline; }
+#sidebar .checked .widget-title{ border-bottom: none; color: #fff; padding-bottom: 12px; text-decoration: none; background: url('/assets/checked.png') no-repeat 10px 0; }
+#sidebar .checked .widget-title i{ display: none; }
 
 #sidebar .widget-content{ padding: 15px 20px; display: none; color: #767676; }
 #sidebar .widget-title input[type="checkbox"]{ margin: 3px 10px 0 0!important; }

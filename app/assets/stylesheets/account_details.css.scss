@@ -83,11 +83,11 @@
 }
 
 .btn-cancel{ margin-right: 10px; color: #818181; font-family: 'Source Sans Pro'; font-weight: 600; border-color: #aaaaaa; }
-#editaccount-form .btn-save{ margin-right: 47px; color: #fff; border-color: #265297; }
+#editaccount-form .btn-save{ margin-right: 47px; color: #fff; border-color: #265297; padding-bottom: 4px!important; }
 
 .changepass .col label, .editinfocontent label{ color: #666666; display: block; margin-bottom: 2px; cursor: pointer; font-size: 17px; font-weight: 600; }
 .changepass .col{ width: 28%; float: left; display: inline; margin-right: 15px; }
-.changepass .btn{ width: 50px; }
+.changepass .btn, .language-widget .edit .btn{ width: 50px; }
 .changepass .col input[type="password"]{ width: 92%!important; }
 .changepass .col03{ margin-right: 0; }
 .changepass .col04{ width: auto; float: right; padding-right: 0; margin-right: 0!important; }

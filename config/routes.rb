@@ -1,5 +1,9 @@
 SignupEmail::Application.routes.draw do
   
+  get "my_languages/index"
+
+  get "my_languages/checklist"
+
   get "account_details/default"
 
   get "account_details/nodata"

@@ -1,0 +1,77 @@
+// Place all the styles related to the MyLanguages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.page-title{ color: #416dab; font-size: 14px; padding: 10px 0; border-bottom: #c7c7c7 1px solid; margin-bottom: 30px; }
+.page-title h3{ font-size: 20px; font-weight: 600; padding: 0; margin: 0; line-height: 24px; }
+.page-title p{ margin: 0; }
+
+
+.lang-row{ margin-bottom: 20px; }
+
+.language-widget{ border: #c7c7c7 1px solid; margin-bottom: 30px; }
+
+.language-widget.green .title{ background: #5d9346; }
+.language-widget.blue .title{ background: #4a72aa; }
+.language-widget.gray .title{ background: #cccccc; }
+.language-widget.red .title{ background: #a32415; }
+
+.language-widget .title{ position: relative; padding: 10px; }
+.language-widget .title h2{ color: #fff; font-weight: 700; padding: 0; margin: 0; line-height: normal; font-size: 18px; }
+.language-widget .title .close{ width: 20px; height: 20px; position: absolute; top: 11px; right: 10px; opacity: 1; }
+
+.language-widget.gray .title h2{ color: #6f6f6f; }
+
+.language-widget.green .title .close{ background: url('/assets/close-active.png') no-repeat; }
+.language-widget.blue .title .close{ background: url('/assets/close-training.png') no-repeat; }
+.language-widget.gray .title .close{ background: url('/assets/close-gray.png') no-repeat; }
+.language-widget.red .title .close{ background: url('/assets/close-red.png') no-repeat; }
+
+.language-widget .item{ padding: 10px; border-top: #c7c7c7 1px solid; }
+.language-widget .item .bid{ height: 70px; vertical-align: middle; padding-left: 90px; color: #000; font-size: 13px; }
+.language-widget .item .bid strong{ display: block; color: #000; font-size: 16px; }
+.language-widget .item .bid p{ margin: 0; line-height: normal; color: #535353; vertical-align: middle; padding-top: 15px; }
+.language-widget .item .bid.low p, .language-widget .item .bid.hang p{ padding-top: 10px; }
+.language-widget .item .bid.abused p{ padding-top: 0px; margin-bottom: 5px; }
+.language-widget .item .bid.abused p a{ color: #5599d8; text-decoration: underline; }
+
+
+.language-widget .bid.edit{ padding: 0!important; }
+.language-widget .item .bid.low .btn-edit{ position: absolute; top: 0; right: 0; color: #777777; border: #aaaaaa 1px solid; font-weight: 700; font-size: 12px; padding: 3px 9px; }
+
+.language-widget .bid.edit p{ padding: 0; }
+.language-widget .bid.edit .btns { position: absolute; top: 0; right: 0;  }
+.language-widget .bid.edit .btns .btn{ display: block; }
+.language-widget .bid.edit .btns .btn-blue{ margin-bottom: 18px; }
+
+.language-widget .item .bid.low{ background: url('/assets/icon-low.png') no-repeat left; } 
+.language-widget .item .bid.high{ background: url('/assets/icon-high.png') no-repeat left; } 
+.language-widget .item .bid.hang{ background: url('/assets/icon-ask.png') no-repeat left; } 
+.language-widget .item .bid.keep{ background: url('/assets/icon-warn.png') no-repeat left; } 
+.language-widget .item .bid.abused{ background: url('/assets/icon-warn-red.png') no-repeat left; } 
+
+
+.inputbox{ width: 70%; height: 50px; background: #fff url('/assets/bg-input-large.png') repeat-x top; position: relative; border: #b2b2b2 1px solid; padding: 20px 0 0 0; }
+.inputbox input[type="text"]{ color: #265297; font-weight: 600; font-size: 18px; width: 70px!important; background: none!important; border: none!important; float: left; 
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+.inputbox input[type="text"]:focus{ 
+  border: none;
+  outline: 0;
+  outline: none;
+  /* IE6-9 */
+
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.inputbox span{  color: #265297; float: right; font-weight: 600; font-size: 14px; margin: 5px 10px 0 0; }
+
