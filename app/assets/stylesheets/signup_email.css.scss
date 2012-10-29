@@ -34,6 +34,10 @@ body{ font-family: 'Source Sans Pro'; }
 	margin: 0 auto -42px;
 }
 
+.nofooter{ margin: 0 auto -1px!important; }
+.nofooter .push{ height: 1px!important; }
+.foot{ height: 1px; }
+
 #content .row-fluid #sidebar, .main-wrap{ height: 100%; }
 
 #content #main{ padding: 0 0 0 20px; }

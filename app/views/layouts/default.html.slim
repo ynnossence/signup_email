@@ -15,12 +15,12 @@ html
 
   body
    
-   #content
+   #content.nofooter
     = render "header"
     .row-fluid.clearfix
      .span12.main-wrap
-      #main.span8
+      #main.span10.offset1
        = yield
-    .push
+
 
 
