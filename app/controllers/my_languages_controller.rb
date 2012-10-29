@@ -8,5 +8,4 @@ class MyLanguagesController < ApplicationController
   def checklist
   end
 
-
 end
