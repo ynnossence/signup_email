@@ -46,16 +46,14 @@
     text-align: center;
     line-height: 50px;
     color: #c03112;
-    -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0 0 2px rgba(0,0,0,0.5);
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
 
-  -webkit-box-shadow: 0 0 2px #cdcdcd;
-  -moz-box-shadow: 0 0 2px #cdcdcd;
-  box-shadow: 0 0 2px #cdcdcd;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
 
 
 
@@ -76,9 +74,9 @@
   border-radius: 50px;
   background: #fff;
   z-index: -2;
-  -webkit-box-shadow: inset 0 0 2px #cdcdcd;
-  -moz-box-shadow: inset 0 0 2px #cdcdcd;
-  box-shadow: inset 0 0 2px #cdcdcd;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
 }
 
 
