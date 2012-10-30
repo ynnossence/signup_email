@@ -1,5 +1,5 @@
 SignupEmail::Application.routes.draw do
-  
+
   get "my_languages/index"
 
   get "my_languages/checklist"
@@ -16,7 +16,9 @@ SignupEmail::Application.routes.draw do
 
   get "account_details/editinfo"
 
-  get "signup_email/index"
+  get "translators/dashboard/index"
+
+  get "translators/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -67,7 +69,7 @@ SignupEmail::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'signup_email#index'
+  root :to => 'translators#index'
 
   # See how all your routes lay out with "rake routes"
 

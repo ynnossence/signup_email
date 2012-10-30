@@ -1,0 +1,36 @@
+#header
+ .row-fluid
+  
+
+  - if current_page?(root_path)
+   .span12.loggedout
+     .span2 
+      h1#logo 
+       a href=:"/" Tolq
+     .span6.offset1
+      = render "common/topnav"
+     .span3
+      .login-btn.pull-right
+       button.btn Got An Account? Login!
+      .user-info.pull-right
+       .user-pic
+        = image_tag("user-pic.jpg", alt: "User Image")
+       p 
+        a href=:"#profile" Jane Air
+
+  - else
+   .span12.loggedin
+    .span2 
+     h1#logo 
+      a href=:"/" Tolq
+    .span6.offset1
+     = render "common/topnav"
+    .span3
+     .login-btn.pull-right
+      button.btn Got An Account? Login!
+     .user-info.pull-right
+      .user-pic
+       = image_tag("user-pic.jpg", alt: "User Image")
+      p 
+       a href=:"#profile" Jane Air
+

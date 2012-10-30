@@ -1,0 +1,2 @@
+module Translators::DashboardHelper
+end

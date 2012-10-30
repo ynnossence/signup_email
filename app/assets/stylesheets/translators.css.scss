@@ -1,0 +1,43 @@
+.dash-row{ padding-top: 40px; }
+.clear{ clear: both; }
+
+
+
+
+.row-inner{ margin-bottom: 20px; }
+.row-inner .bal h3{ margin: 0; padding: 0; line-height: normal; color: #265297; }
+.row-inner .bal p{ margin: 0; font-size: 16px; color: #6D6D6E; }
+.inner-box{ padding: 20px; background: #fff; border: #cccccc 1px solid; }
+.blue-box .btn{ width: 80px; }
+.blue-box{ padding: 20px; background: #f5f7fa; border: #cbd6e6 1px solid; }
+
+.inner-box h2{ float: left; color: #6d6d6e; font-size: 20px; padding: 0; margin: 0; line-height: 32px; }
+.inner-box h2 strong{ vertical-align: middle; font-size: 36px; color: #265297; margin: 0px 10px 0 0; float: left; }
+.inner-box .btn{ float: right; }
+
+.translations h3{ line-height: normal; }
+.translations{ font-size: 14px; color: #6D6D6E; }
+.translations .t-name{ height: 80px; }
+.translations .t-name .image{ width: 100px; height: 100px; float: left; margin: -20px 0 0 -20px; border-right: #cccccc 1px solid; margin-right: 15px; }
+.translations .t-name h3{ margin: 5px 0 0; padding: 0; float: left; font-size: 20px; color: #265297; }
+
+.translations .t-status{ float: right; background: #f2f2f2; text-align: center;  border-left: #cccccc 1px solid; padding: 20px 20px 0; margin: -20px -20px 0 0; height: 80px; }
+.translations .t-status h3{ margin: 0 0 5px 0; padding: 0; font-size: 24px; font-weight: normal; }
+.translations .t-status .btn{ margin: 0; }
+.translations .task-info{ margin-left: -20px; margin-right: -20px;  border-top: #cccccc 1px solid; padding: 20px 0 0 0; clear: both; }
+
+
+
+
+.ecol-3{ }
+.ecol-3 .col{ width: 33%; text-align: center; display: inline-block; }
+.ecol-3 .col h3{ margin: 0; line-height: normal; color: #265297; }
+.ecol-3 .col p:last-child{ margin-bottom: 0; }
+
+
+
+.rank-status{ min-width: 420px; border: #aaaaaa 1px solid; display: inline-block; font-size: 16px; height: 30px; line-height: 30px; font-weight: bold; }
+.rank-status span{ height: 20px; margin: 2px; padding: 3px 0; display: block; background: #cccccc; position: absolute; z-index: -1; width: 40%; }
+.rank-status.low{ color: #C03112; }
+
+
