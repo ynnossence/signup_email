@@ -1,0 +1,2 @@
+module Translators::MyTranslationsHelper
+end

@@ -233,3 +233,32 @@ transform-origin:35px 35px;
 
 .inputbox span{  color: #265297; float: right; font-weight: 600; font-size: 14px; margin: 5px 10px 0 0; }
 
+
+
+
+.page-various{ padding-top: 40px; }
+table.com{
+  width: 100%; 
+  border: #c8c8c8 1px solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  *border-collapse: collapse; /* IE7 and lower */
+  border-collapse: separate!important;
+  border-spacing: 0!important; 
+  color: #777; font-size: 14px;
+}
+
+table.com td{ vertical-align: middle; border-bottom: #c8c8c8 1px solid; }
+table.com td.info{ padding: 15px 0 15px 45px; background: url('/assets/radio.png') no-repeat 13px 50%; }
+table.com td.price{ padding: 15px 20px 15px 0; }
+table.com tr:last-child td{ border-bottom: none; }
+
+
+table.com h3{ font-size: 18px; line-height: normal; margin: 0 0 0 0; color: #5175ac; }
+table.com p{ margin-bottom: 0; }
+table.com h2{ color: #265297; font-size: 700; text-align: right; line-height: normal; margin: 0; }
+
+
+.note{ font-style: italic; color: #b2b2b2; text-align: right; margin: 10px 20px 15px 0; }
+

@@ -18,7 +18,11 @@ SignupEmail::Application.routes.draw do
 
   get "translators/dashboard/index"
 
+  get "translators/my-translations/index"
+
   get "translators/index"
+
+  get "translators/various_components"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
