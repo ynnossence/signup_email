@@ -36,8 +36,27 @@
 
 
 
-.rank-status{ min-width: 420px; border: #aaaaaa 1px solid; display: inline-block; font-size: 16px; height: 30px; line-height: 30px; font-weight: bold; }
-.rank-status span{ height: 20px; margin: 2px; padding: 3px 0; display: block; background: #cccccc; position: absolute; z-index: -1; width: 40%; }
-.rank-status.low{ color: #C03112; }
+.rank-status{ min-width: 410px; border: #aaaaaa 1px solid; display: inline-block; font-size: 16px; height: 30px; line-height: 30px; font-weight: bold; 
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding-left: 10px;
+-moz-box-shadow: inset 0 2px 3px -2px #000;
+-webkit-box-shadow: inset 0 2px 3px -2px #000;
+box-shadow: inset 0 2px 3px -2px #000;
+color: #191f10;
+text-align: left;
+text-shadow: #fff 0px 1px 0px;
+}
+.rank-status span{ height: 30px; display: block; background: #7b9c52; position: absolute; z-index: -1; left: 0; top: 0; width: 40%; 
+-webkit-border-top-left-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+text-align: left;
+}
+.rank-status.low{ color: #191f10; }
 
 
