@@ -1,4 +1,4 @@
-class MyLanguagesController < ApplicationController
+class Translators::MyLanguagesController < ApplicationController
   
   layout :layout
 

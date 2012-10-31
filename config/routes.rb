@@ -1,8 +1,6 @@
 SignupEmail::Application.routes.draw do
 
-  get "my_languages/index"
 
-  get "my_languages/checklist"
 
   get "account_details/default"
 
@@ -19,6 +17,10 @@ SignupEmail::Application.routes.draw do
   get "translators/dashboard/index"
 
   get "translators/my-translations/index"
+
+  get "translators/my_languages/index"
+
+  get "translators/my_languages/checklist"
 
   get "translators/index"
 
