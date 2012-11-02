@@ -1,4 +1,4 @@
-class AccountDetailsController < ApplicationController
+class Translators::AccountController < ApplicationController
 
   layout "acount_details"
 

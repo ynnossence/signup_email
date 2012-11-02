@@ -1,3 +1,17 @@
+
+@font-face {
+    font-family: 'tolq_glyphsregular';
+    src: url('/assets/fonts/tolqglyphs-webfont.eot');
+    src: url('/assets/fonts/tolqglyphs-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/tolqglyphs-webfont.woff') format('woff'),
+         url('/assets/fonts/tolqglyphs-webfont.ttf') format('truetype'),
+         url('/assets/fonts/tolqglyphs-webfont.svg#tolq_glyphsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 .dash-row{ padding-top: 40px; }
 .clear{ clear: both; }
 
@@ -80,7 +94,10 @@ text-align: left;
 
 
 .translations-menu{ text-align: center; margin: 5px 0 0 0; }
-.translations-menu li{ display: inline-block; width: 110px; }
+.translations-menu li{ display: inline-block; }
+
+
+.nav-btn li a span, .translations-menu li a span{ float: left; margin: 11px 5px 0 0; font-size: 20px; line-height: 14px; font-family: 'tolq_glyphsregular'; }
 
 .nav-btn{ padding: 0; list-style: none; margin: 5px 0 0 0; }
 .nav-btn li{ display: block; float: left; }
@@ -138,7 +155,7 @@ border-bottom-right-radius: 4px;
 border-right: 1px solid #a2a2a2;
 }
 
-
+.translations-menu li a{ padding-right: 20px; }
 
 
 
@@ -159,4 +176,19 @@ border-right: 1px solid #a2a2a2;
    height: 80px!important; font-size: 18px;
 }
 .status-completed .t-status h3{ font-size: 24px; }
+
+.status-wrap{ padding-top: 30px; margin-bottom: 50px; }
+.status-wrap select{ margin-right: 30px; margin-top: 5px; }
+.w60{ width: 270px!important; min-width: 200px; }
+.w60 span{ width: 60%; }
+
+.tabcheck, .tabpages{ margin-bottom: 50px; }
+.tabcheck td, .tabcheck tr:last-child td{ padding: 15px 0 15px 45px; }
+.tabcheck td{ background: url('/assets/tab-check.png') no-repeat 13px 50%; }
+.tabcheck tr:hover td{ background: #e9edf4 url('/assets/tab-check-active.png') no-repeat 13px 50%!important; }
+
+
+.tabpages th{ border-bottom: #cfcfcf 1px solid; }
+
+
 

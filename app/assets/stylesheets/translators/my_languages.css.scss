@@ -249,7 +249,7 @@ table.com{
   color: #777; font-size: 14px;
 }
 
-table.com td{ vertical-align: middle; border-bottom: #c8c8c8 1px solid; }
+table.com td{ vertical-align: middle; border-bottom: #c8c8c8 1px solid; cursor: pointer; }
 table.com td.info{ padding: 15px 0 15px 45px; background: url('/assets/radio.png') no-repeat 13px 50%; }
 table.com td.price{ padding: 15px 20px 15px 0; }
 table.com tr:last-child td{ border-bottom: none; }

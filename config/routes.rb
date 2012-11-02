@@ -2,17 +2,17 @@ SignupEmail::Application.routes.draw do
 
 
 
-  get "account_details/default"
+  get "translators/account/default"
 
-  get "account_details/nodata"
+  get "translators/account/nodata"
 
-  get "account_details/edit"
+  get "translators/account/edit"
 
-  get "account_details/confirmation"
+  get "translators/account/confirmation"
 
-  get "account_details/editanother"
+  get "translators/account/editanother"
 
-  get "account_details/editinfo"
+  get "translators/account/editinfo"
 
   get "translators/dashboard/index"
 

@@ -68,5 +68,12 @@ if($('#content').hasClass('nofooter')){
   
   $('#sidebar-accordion .checked .widget-content').hide();
   
+  $('#header').hover(function(){ 
+    $(this).find('.logout-box').show();
+  },function(){ 
+    $(this).find('.logout-box').hide();
+  });
+
+
 
 });

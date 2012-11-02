@@ -1,0 +1,239 @@
+.row-fluid.mid-item.balance
+ .span2.left-ttl
+  h2 Balance
+ .span10
+   .def
+    .box.clearfix
+     .pull-left
+      p.current-balance Current Balance: 1,000,000.00 USD
+      p.bank 
+       span ANZ Bank
+       = link_to "Change your withdrawal method", {:controller => "account", :action => "editinfo"} , :class => "link1" 
+     .pull-right.wrap-wd
+      = link_to "Withdraw", {:controller => "account", :action => "confirmation"} , :class => "btn btn-mid pull-right" 
+      span Transaction Fee: 3.20 USD
+   .dataoff
+    .box.clearfix
+     a.btn.btn-mid href=:"#reg" Register a Payment Method
+   .editcontent
+    .box.clearfix
+     .pull-left
+      p.current-balance Are you sure you would like to withdraw?
+      p.bank 
+       span You will be charged a transaction fee of 3.20 USD
+     .pull-right.wrap-wd
+      a.btn.btn-mid.btn-blue.pull-right href=:"#withdraw" Withdraw 1,000,000.00 USD
+      a.btn.btn-mid.pull-right href=:"#cancel" Cancel
+   .confcontent
+    .box.clearfix
+     .pull-left
+      p.current-balance Are you sure you would like to withdraw?
+      p.bank 
+       span You will be charged a transaction fee of 3.20 USD
+     .pull-right.wrap-wd
+      a.btn.btn-mid.btn-blue.pull-right href=:"#withdraw" Withdraw 1,000,000.00 USD
+      a.btn.btn-mid.pull-right href=:"#cancel" Cancel
+   .editinfocontent
+    .box.clearfix
+     .span8
+      form
+       fieldset
+        label for=:bname Bank Name:
+        input type=:text name=:bname id=:bname
+       fieldset
+        label for=:account_num Account Number:
+        input type=:text name=:account_num id=:account_num
+       fieldset
+        label for=:bsb BSB:
+        input type=:text name=:bsb id=:bsb
+       fieldset
+        label for=:scode SWIFT Code:
+        input type=:text name=:scode id=:scode
+       fieldset
+        label for=:baddress Bank Address:
+        input type=:text name=:baddress id=:baddress
+       fieldset
+        input.btn.btn-save.pull-right type=:submit value=:Save  
+        input.btn.btn-cancel.pull-right type=:submit value=:Cancel
+
+     .span4
+      h4 What are Payment Methods
+      p A payment method is a nominated bank account.
+      p All payment methods conform to international wire transfer standards.
+      p To find out the details for your account, contact your bank. 
+
+.row-fluid.mid-item.accountinfo.changestate
+  .span2.left-ttl
+   h2 Account Info
+  .span10
+   .def
+    .box.clearfix
+     a.link1.change-pass href=:"#changepass" Change your password
+     .account-pic
+      = image_tag("account-pic.jpg", alt: "Account Image")
+     ul.info
+      li.name: h3 Jane Air
+      li.position: h4 Personal
+      li.email: a href=:"mailto:jane@outlook.com" jane@outlook.com
+      li.tax: span.tax-wrap 
+       strong Tax ID: 
+       |093 149 237 A
+       span.address
+        |1 Main Street, Blacktown NSW 2418, Australia
+   .dataoff
+    .box.clearfix
+     p Account Info No Data State
+   .editcontent
+    .box.clearfix
+     .span3
+      .addphoto
+     .span9
+      .account-form
+       form#editaccount-form
+        fieldset
+         label for=:fname First Name:
+         input type=:text name=:fname id=:fname
+        fieldset
+         label for=:lname Last Name:
+         input type=:text name=:lname id=:lname
+        fieldset
+         label for=:email Email Address:
+         input type=:email name=:email id=:email
+        fieldset.taxwrap
+         label for=:tax Tax ID:
+         input type=:text name=:tax id=:tax
+        fieldset
+         label for=:address1 Street Address 1:
+         input type=:text name=:address1 id=:address1
+        fieldset
+         label for=:address2 Street Address 2:
+         input type=:text name=:address1 id=:address2
+        fieldset
+         label for=:city City:
+         input type=:text name=:city id=:city
+        fieldset.clearfix
+         .col.col1
+          label for=:state State:
+          input type=:text name=:state id=:state
+         .col.col2
+          label for=:zip ZIP/Post Code:
+          input type=:text name=:zip id=:zip
+         .col.col3
+          label for=:country Country:
+          input.coun type=:text value=:Australia name=:country id=:country
+        fieldset.clearfix
+         input.btn.btn-save.pull-right type=:submit value=:Save  
+         input.btn.btn-cancel.pull-right type=:submit value=:Cancel
+   .changepass
+    .box.clearfix
+     .col.col01.clearfix
+      label for=:oldpass Original Password:
+      input type=:password name=:oldpass id=:oldpass
+     .col.col02.clearfix
+      label for=:newpass New Password:
+      input type=:password name=:newpass id=:newpass
+     .col.col03.clearfix
+      label for=:newpass2 Confirm New Password:
+      input type=:password name=:newpass2 id=:newpass2
+     .col.col04
+       p 
+        a.btn.btn-blue.btn-small href=:"#change" Change
+       p 
+        a.btn.btn-small href=:"#cancel" Cancel
+
+.row-fluid.mid-item.withdrawals
+  .span2.left-ttl
+   h2 Withdrawals
+  .span10
+   .def
+    .box.clearfix.nopad
+     table.box-tab
+      tr
+       td.col01 
+        strong 34.00 
+        | USD
+       td.col02 
+        |12 January 2012
+       td.col03
+        a.btn.btn-small href=:"#moreinfo" More Info
+      tr
+       td.col01 
+        strong 1,534,392.25 
+        | USD
+       td.col02 
+        |12 February 2012
+       td.col03
+        a.btn.btn-small href=:"#moreinfo" More Info
+      tr
+       td.col01 
+        strong 0.01 
+        |USD
+       td.col02 
+        |12 March 2012
+       td.col03
+        a.btn.btn-small href=:"#moreinfo" More Info
+      tr.last
+       td.col01 
+        strong 12,334.20 
+        |USD
+       td.col02 
+        |12 April 2012
+       td.col03
+        a.btn.btn-small href=:"#moreinfo" More Info
+   .dataoff
+    .box.clearfix
+     p.note Withdrawals you make will appear here 
+
+.row-fluid.mid-item.invoices
+ .span2.left-ttl
+  h2 Invoices
+ .span10
+  .def
+   .box.clearfix.nopad
+    table.box-tab
+     tr
+      td.col01 
+       strong Invoice 12345
+      td.col02 
+       |12 January 2012
+      td.col03
+       a.btn.btn-small href=:"#download" Download
+     tr
+      td.col01 
+       strong Invoice 40392
+      td.col02 
+       |12 February 2012
+      td.col03
+       a.btn.btn-small href=:"#download" Download
+     tr
+      td.col01 
+       strong Invoice 14123
+      td.col02 
+       |12 March 2012
+      td.col03
+       a.btn.btn-small href=:"#download" Download
+     tr.last
+      td.col01 
+       strong Invoice 32412
+      td.col02 
+       |12 April 2012
+      td.col03
+       a.btn.btn-small href=:"#download" Download
+  .dataoff
+    .box.clearfix
+     p.note When you earn money, invoices will appear here
+
+.row-fluid.mid-item
+ .span2.left-ttl
+  h2 Preferences
+ .span10
+  .box.clearfix.pref
+   p 
+    input#ch01.cb type="checkbox"
+    label for=:"ch01" Send email notifications for community translations.
+   p 
+    input#ch02.cb type="checkbox"
+    label for=:"ch02" Send email notifications for translation reviews.
+   p.last 
+    input#ch03.cb type="checkbox"
+    label for=:"ch03" Send email notifications for pro translations.

@@ -4,6 +4,8 @@
 
 @import "bootstrap";
 @import "bootstrap-responsive";
+
+
 html, body { height: 100%; }
 body{ font-family: 'Source Sans Pro'; }
 
@@ -33,6 +35,13 @@ body{ font-family: 'Source Sans Pro'; }
 .loggedout .login-btn{ display: block; }
 .loggedout .user-info, .loggedout .top-nav{ display: none; }
 
+
+.logout-box{ border: 1px solid #BCBCBC; padding: 10px; position: absolute!important; bottom: -62px; right: 0; 
+background: rgb(255, 255, 255); /* The Fallback */
+background: rgba(255, 255, 255, 0.7); 
+z-index: 999; display: none;
+}
+.logout-box a{ color: #777777; font-size: 18px; font-weight: 600; padding-left: 30px; background: url('/assets/btn-logout.jpg') no-repeat left; line-height: 30px; display: block; cursor: pointer; }
 
 #content {
 	min-height: 100%;
@@ -262,7 +271,6 @@ h3.email-ttl{ margin-top: -4px; }
   background-color: #2f5b9f;
   *background-color: #2f5b9f;
 }
-
 
 
 /** Sidebar **/

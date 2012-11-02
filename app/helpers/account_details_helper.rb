@@ -1,4 +1,0 @@
-module AccountDetailsHelper
-end
-
-
