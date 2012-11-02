@@ -253,8 +253,8 @@ table.com td{ vertical-align: middle; border-bottom: #c8c8c8 1px solid; }
 table.com td.info{ padding: 15px 0 15px 45px; background: url('/assets/radio.png') no-repeat 13px 50%; }
 table.com td.price{ padding: 15px 20px 15px 0; }
 table.com tr:last-child td{ border-bottom: none; }
-
-
+table.com tr:hover td{ background: #e9edf4; }
+table.com tr:hover td.info { background: #e9edf4 url('/assets/radio-active.png') no-repeat 13px 50%; }
 table.com h3{ font-size: 18px; line-height: normal; margin: 0 0 0 0; color: #5175ac; }
 table.com p{ margin-bottom: 0; }
 table.com h2{ color: #265297; font-size: 700; text-align: right; line-height: normal; margin: 0; }
