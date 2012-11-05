@@ -68,12 +68,26 @@ if($('#content').hasClass('nofooter')){
   
   $('#sidebar-accordion .checked .widget-content').hide();
   
-  $('#header').hover(function(){ 
-    $(this).find('.logout-box').show();
+  $('#header .user-info').hover(function(){ 
+    $(this).css({ 
+      'padding-bottom': 15 + 'px',
+      'margin-bottom' : (-15)+ 'px',  
+    });
+    $(this).parent().find('.logout-box').show();
   },function(){ 
-    $(this).find('.logout-box').hide();
+    $(this).css({ 
+      'padding-bottom': 0,
+      'margin-bottom' : 0,  
+    });
+    $(this).parent().find('.logout-box').hide();
   });
 
+
+  $('.logout-box').hover(function(){ 
+    $(this).show();
+  },function(){ 
+    $(this).hide();
+  });
 
 
 });
