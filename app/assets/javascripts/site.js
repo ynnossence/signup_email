@@ -89,5 +89,16 @@ if($('#content').hasClass('nofooter')){
     $(this).hide();
   });
 
+  var rads = $('.tab-rad tr');
+  rads.click(function(){
+    rads.removeClass('selected'); 
+    $(this).addClass('selected');
+  });
 
+  $(".tabcheck tr").toggle(function () {
+    $(this).addClass("selected");
+  },function(){
+    $(this).removeClass("selected");
+  });
+  
 });

@@ -46,11 +46,11 @@
 
 .task-info table{ width: 100%; }
 .task-info table tr td{ padding: 0 10px; }
-table tr:first-child td{ padding-bottom: 20px; }
-table tr:last-child td{ padding-bottom: 0; }
-table tr.tab-row td{ padding-top: 20px; border-top: #ccc 1px solid; }
-table tr.tab-row .btn{ float: left; }
-table tr.tab-row h3{ color: #265297; font-size: 26px; }
+.task-info table tr:first-child td{ padding-bottom: 20px; }
+.task-info table tr:last-child td{ padding-bottom: 0; }
+.task-info table tr.tab-row td{ padding-top: 20px; border-top: #ccc 1px solid; }
+.task-info table tr.tab-row .btn{ float: left; }
+.task-info table tr.tab-row h3{ color: #265297; font-size: 26px; }
 
 .ecol-3{ }
 .ecol-3 .col{ width: 33%; text-align: center; display: inline-block; }
@@ -185,7 +185,7 @@ border-right: 1px solid #a2a2a2;
 .tabcheck, .tabpages{ margin-bottom: 50px; }
 .tabcheck td, .tabcheck tr:last-child td{ padding: 15px 0 15px 45px; }
 .tabcheck td{ background: url('/assets/tab-check.png') no-repeat 13px 50%; }
-.tabcheck tr:hover td{ background: #e9edf4 url('/assets/tab-check-active.png') no-repeat 13px 50%!important; }
+.tabcheck tr:hover td, .tabcheck tr.selected td{ background: #e9edf4 url('/assets/tab-check-active.png') no-repeat 13px 50%!important; }
 
 
 .tabpages th{ border-bottom: #cfcfcf 1px solid; }
