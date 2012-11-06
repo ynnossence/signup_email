@@ -5,6 +5,9 @@ class Translators::AccountController < ApplicationController
   def default
   end
 
+  def account_details_firstrun
+  end
+
   def nodata
   end
 

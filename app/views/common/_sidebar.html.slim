@@ -2,23 +2,46 @@
  #sidebar-accordion.side-wrap
   h3.sidebar-ttl Getting Started
 
-  .widget.checked
-   h4.widget-title
-    i.icon-question
-    |Register Your Details
-   .widget-content
-    p.txt-center Get started with Tolq by signing up for an account. You can use a social account of your email address.
+  - if current_page?(url_for(:action => 'checklist_firstrun', :controller => "/translators/my_languages"))
+   .widget.checked
+    h4.widget-title
+     i.icon-question
+     |Register Your Details
+    .widget-content
+     p.txt-center Get started with Tolq by signing up for an account. You can use a social account of your email address.
 
-  .widget.default
-   h4.widget-title
-    i.icon-question
-    |Register Your Language Pairs
-   .widget-content
-    p.txt-center Lorem ipsum dolor si amet.
+   .widget.active
+    h4.widget-title
+     i.icon-question
+     |Register Your Language Pairs
+    .widget-content
+     p.txt-center Now that you have task in training, it's time complete your first task to earn some money.
 
-  .widget.default
-   h4.widget-title
-    |Learn about Tolq
-    i.icon-question
-   .widget-content
-    p.txt-center Lorem ipsum dolor si amet.
+   .widget.default
+    h4.widget-title
+     |Learn about Tolq
+     i.icon-question
+    .widget-content
+     p.txt-center Lorem ipsum dolor si amet.
+
+  - else
+   .widget.active
+    h4.widget-title
+     i.icon-question
+     |Register Your Details
+    .widget-content
+     p.txt-center Get started with Tolq by signing up for an account. You can use a social account of your email address.
+
+   .widget.default
+    h4.widget-title
+     i.icon-question
+     |Register Your Language Pairs
+    .widget-content
+     p.txt-center Lorem ipsum dolor si amet.
+
+   .widget.default
+    h4.widget-title
+     |Learn about Tolq
+     i.icon-question
+    .widget-content
+     p.txt-center Lorem ipsum dolor si amet.

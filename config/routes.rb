@@ -3,6 +3,7 @@ SignupEmail::Application.routes.draw do
 
 
   get "translators/account/default"
+  get "translators/account/account_details_firstrun"
 
   get "translators/account/nodata"
 
@@ -15,14 +16,19 @@ SignupEmail::Application.routes.draw do
   get "translators/account/editinfo"
 
   get "translators/dashboard/index"
+  get "translators/dashboard/index_firstrun"
 
   get "translators/my-translations/index"
+  get "translators/my-translations/index_firstrun"
 
   get "translators/my_languages/index"
 
   get "translators/my_languages/checklist"
+  get "translators/my_languages/checklist_firstrun"
+
 
   get "translators/index"
+  get "translators/index_firstrun"
 
   get "translators/various_components"
 

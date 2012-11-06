@@ -5,13 +5,18 @@ class TranslatorsController < ApplicationController
   def index
   end
 
+  def index_firstrun
+  end
+
   def various_components
   end
 
   def layout
   	case action_name
   	when "index"
-  		"signup_email"
+  		"with_sidebar_footer"
+    when "index_firstrun"
+      "with_sidebar_footer"
   	else
   		"default"
   	end

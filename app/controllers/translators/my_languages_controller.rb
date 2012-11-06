@@ -8,6 +8,9 @@ class Translators::MyLanguagesController < ApplicationController
   def checklist
   end
 
+  def checklist_firstrun
+  end
+
   def layout
   	case action_name
   	when "index"

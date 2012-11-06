@@ -2,7 +2,7 @@
  .row-fluid
   
 
-  - if current_page?(root_path)
+  - if current_page?(root_path) || current_page?(url_for(:action => 'index_firstrun', :controller => "/translators"))
    .span12.loggedout
      .span2 
       h1#logo 
