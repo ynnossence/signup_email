@@ -180,7 +180,7 @@ a.btn{
   position: relative;
 }
 
-#signup-form fieldset, #mid-inner fieldset {
+#signup-form fieldset, .mid-inner fieldset {
   margin-bottom: 5px;
 }
 
@@ -195,9 +195,15 @@ a.btn{
 #signup-form input[type="text"],
 #signup-form input[type="password"],
 #signup-form input[type="email"],
-#mid-inner input[type="text"],
-#mid-inner input[type="password"],
-#mid-inner input[type="email"] {
+.editinfocontent input[type="text"],
+.editinfocontent input[type="password"],
+.editinfocontent input[type="email"] ,
+.editcontent input[type="text"],
+.editcontent input[type="password"],
+.editcontent input[type="email"] ,
+.changepass input[type="text"],
+.changepass input[type="password"],
+.changepass input[type="email"] {
   width: 90%;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -566,6 +572,7 @@ h3.email-ttl {
   cursor: pointer;
 }
 
+#sidebar .checked .widget-content{ display: none!important; visibility: hidden; }
 
 
 /** Footer **/
@@ -674,15 +681,18 @@ h3.email-ttl {
   font-weight: bold;
 }
 
-#mid-inner {
+/*.mid-inner {
   padding: 25px 0 0 0;
-}
+}*/
 
-#mid-inner .mid-item {
+.mid-inner .mid-item {
+  margin-top: 30px;
+}
+.mid-inner .mid-item:last-child {
   margin-bottom: 30px;
 }
 
-#mid-inner .box {
+.mid-inner .box {
   padding: 12px;
   border: #cccccc 1px solid;
   color: #aaaaaa;
@@ -690,34 +700,34 @@ h3.email-ttl {
   position: relative;
 }
 
-#mid-inner .box .current-balance {
+.mid-inner .box .current-balance {
   color: #265297;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-#mid-inner .box .bank {
+.mid-inner .box .bank {
   font-weight: 600;
   font-size: 18x;
   margin: 0;
 }
 
-#mid-inner .box .bank span {
+.mid-inner .box .bank span {
   margin-right: 30px;
   float: left;
 }
 
-#mid-inner .box .link1 {
+.mid-inner .box .link1 {
   text-decoration: underline;
   color: #2e83d0;
 }
 
-#mid-inner .box h4 {
+.mid-inner .box h4 {
   color: #426eab;
 }
 
-#mid-inner .nopad {
+.mid-inner .nopad {
   padding: 0;
 }
 
@@ -763,27 +773,27 @@ h3.email-ttl {
   padding: 3px 9px!important;
 }
 
-#mid-inner .box .account-pic {
+.mid-inner .box .account-pic {
   float: left;
   margin: -12px 20px -12px -12px;
 }
 
-#mid-inner .box .change-pass {
+.mid-inner .box .change-pass {
   float: right;
   margin: 15px 0 0 0;
 }
 
-#mid-inner .box ul.info {
+.mid-inner .box ul.info {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#mid-inner .box ul.info li {
+.mid-inner .box ul.info li {
   margin-bottom: 5px;
 }
 
-#mid-inner .box ul.info h3 {
+.mid-inner .box ul.info h3 {
   color: #265297;
   font-size: 24px;
   font-weight: 600;
@@ -792,7 +802,7 @@ h3.email-ttl {
   margin: 0;
 }
 
-#mid-inner .box ul.info h4 {
+.mid-inner .box ul.info h4 {
   color: #406cab;
   font-size: 16px;
   font-weight: 600;
@@ -801,18 +811,18 @@ h3.email-ttl {
   margin: 0;
 }
 
-#mid-inner .box ul.info a {
+.mid-inner .box ul.info a {
   font-size: 16px;
   text-decoration: none;
   font-weight: 600;
   color: #406cab;
 }
 
-#mid-inner .box ul.info .email {
+.mid-inner .box ul.info .email {
   margin-bottom: 25px;
 }
 
-#mid-inner .box ul.info span.address {
+.mid-inner .box ul.info span.address {
   padding-left: 40px;
 }
 

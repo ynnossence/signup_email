@@ -1,0 +1,57 @@
+= provide(:sidebar_class,'step04')
+
+.page-title.clearfix
+ .fl
+  h3 Language Pairs
+  p Language pairs are used to obtain tasks for you. 
+ .fr
+  = link_to "Register a Language Pair", {:controller => "my_languages", :action => "index"} , :class => "btn btn-mid pull-right"
+
+.row.lang-row
+ .span2.left-ttl
+  h2 Active
+ .span5
+  .language-widget.green
+   .title
+    h2 English to Dutch
+    a.close href:="#"
+   .item.clearfix
+    .bid.edit
+     .inputbox
+      label USD
+      span per word
+     p.btns 
+      a.btn.btn-blue.btn-small href=:"#change" Change
+      a.btn.btn-small href=:"#cancel" Cancel
+
+   .item.clearfix
+    .bid.high
+     .bidder
+      strong High
+      span
+     p 
+      strong Quality Rank
+      | You're doing great! You can see tasks.
+
+ .span5
+  .language-widget.green
+   .title
+    h2 Chinese to German
+    a.close href:="#"
+   .item.clearfix
+    .bid.edit
+     .inputbox
+      label USD
+      span per word
+     p.btns 
+      a.btn.btn-blue.btn-small href=:"#change" Change
+      a.btn.btn-small href=:"#cancel" Cancel
+
+   .item.clearfix
+    .bid.high
+     .bidder
+      strong High
+      span
+     p 
+      strong Quality Rank
+      | You're doing great! You can see tasks.

@@ -65,8 +65,26 @@ if($('#content').hasClass('nofooter')){
   	$(this).next().slideUp();  
   	$(this).parent().removeClass('active');
   });
+
   
+
+
+  var step = 7;
+  for(var i = 1; i <= 7; i++){
+
+    if($('#sidebar-accordion').hasClass('step0' +i)){
+
+      $('.widget-step0'+i).prevAll('.widget')
+        .addClass("checked")
+        .removeClass('default');
+      $('.widget-step0'+i).addClass("active");
+
+    }
+
+  }
+
   $('#sidebar-accordion .checked .widget-content').hide();
+
   
   $('#header .user-info').hover(function(){ 
     $(this).css({ 

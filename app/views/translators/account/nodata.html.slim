@@ -8,9 +8,9 @@
       p.current-balance Current Balance: 1,000,000.00 USD
       p.bank 
        span ANZ Bank
-       = link_to "Change your withdrawal method", {:controller => "account", :action => "editinfo"} , :class => "link1"
+       = link_to "Change your withdrawal method", {:controller => "account", :action => "withdrawal_method"} 
      .pull-right.wrap-wd
-      = link_to "Withdraw", {:controller => "account", :action => "confirmation"} , :class => "btn btn-mid pull-right" 
+      = link_to "Withdraw", {:controller => "account", :action => "withdraw_earnings"} , :class => "btn btn-mid pull-right" 
       span Transaction Fee: 3.20 USD
    .dataoff
     .box.clearfix
@@ -70,7 +70,7 @@
   .span10
    .default
     .box.clearfix
-     a.link1.change-pass href=:"#changepass" Change your password
+     a.change-pass href=:"#changepass" Change your password
      .account-pic
       = image_tag("account-pic.jpg", alt: "Account Image")
      ul.info

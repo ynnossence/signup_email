@@ -1,11 +1,8 @@
 class Translators::AccountController < ApplicationController
 
-  layout "acount_details"
+  layout :layout
 
   def default
-  end
-
-  def account_details_firstrun
   end
 
   def nodata
@@ -14,12 +11,31 @@ class Translators::AccountController < ApplicationController
   def edit
   end
 
-  def confirmation
+  def withdraw_earnings
+  end
+
+  def withdraw_earnings_firstrun
   end
 
   def editanother
   end
 
-  def editinfo
+  def withdrawal_method
   end
+
+  def withdrawal_method_firstrun
+  end
+
+def layout
+  case action_name
+    when "withdraw_earnings_firstrun"
+      "withchecklist"
+    when "withdrawal_method_firstrun"
+      "withchecklist"
+    else
+      "acount_details"
+    end
+end
+
+
 end

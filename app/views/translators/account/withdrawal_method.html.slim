@@ -1,4 +1,4 @@
-.row-fluid.mid-item.balance.confirmstate
+.row-fluid.mid-item.balance.editinfostate
  .span2.left-ttl
   h2 Balance
  .span10
@@ -8,9 +8,9 @@
       p.current-balance Current Balance: 1,000,000.00 USD
       p.bank 
        span ANZ Bank
-       = link_to "Change your withdrawal method", {:controller => "account", :action => "editinfo"} 
+       = link_to "Change your withdrawal method", {:controller => "account", :action => "withdrawal_method"} 
      .pull-right.wrap-wd
-      = link_to "Withdraw", {:controller => "account", :action => "confirmation"} , :class => "btn btn-mid pull-right" 
+      = link_to "Withdraw", {:controller => "account", :action => "withdraw_earnings"} , :class => "btn btn-mid pull-right" 
       span Transaction Fee: 3.20 USD
    .dataoff
     .box.clearfix

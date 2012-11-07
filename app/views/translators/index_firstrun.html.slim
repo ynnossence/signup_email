@@ -1,1 +1,40 @@
+= provide(:sidebar_class,'step01')
+
+.row-fluid.welcome
+ .span3
+ .span9
+  h1 Welcome to Tolq!
+  h4 To become a translator for Tolq , just fill out the form below:
+
+.row-fluid.social-login
+ .span3
+  h3.title.social-ttl Signup with a Social Account
+ .span9
+  ul.social-btns
+   li: a.btn.btn-fb href=:"#" Facebook
+   li: a.btn.btn-tw href=:"#" Twitter
+   li: a.btn.btn-li href=:"#" Linked In
+   li: a.btn.btn-gp href=:"#" Google Plus
+
 .row-fluid
+ .span3
+  h3.title.email-ttl Signup with Your Email Address
+ .span9
+  form#signup-form
+   fieldset
+    label for=:fname First Name:
+    input type=:text name=:fname id=:fname
+   fieldset
+    label for=:lname Last Name:
+    input type=:text name=:lname id=:lname
+   fieldset.email-wrap
+    label for=:email Email Address:
+    input type=:email name=:email id=:email
+   fieldset
+    label for=:pass1 Password:
+    input type=:password name=:pass1 id=:pass1
+   fieldset
+    label for=:pass2 Confirm Password:
+    input type=:password name=:pass2 id=:pass2
+   fieldset.txt-right
+    input.btn.btn-next type=:submit value=:Next

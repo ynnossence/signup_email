@@ -9,23 +9,29 @@ SignupEmail::Application.routes.draw do
 
   get "translators/account/edit"
 
-  get "translators/account/confirmation"
+  get "translators/account/withdraw_earnings"
+  get "translators/account/withdraw_earnings_firstrun"
 
   get "translators/account/editanother"
 
-  get "translators/account/editinfo"
+  get "translators/account/withdrawal_method"
+  get "translators/account/withdrawal_method_firstrun"
 
   get "translators/dashboard/index"
   get "translators/dashboard/index_firstrun"
 
-  get "translators/my-translations/index"
-  get "translators/my-translations/index_firstrun"
+  get "translators/my_translations/index"
+  get "translators/my_translations/index_firstrun"
+  get "translators/my_translations/accept_task_firstrun"
+
 
   get "translators/my_languages/index"
+  get "translators/my_languages/index_firstrun"
+  get "translators/my_languages/setbid_firstrun"
 
+  
   get "translators/my_languages/checklist"
-  get "translators/my_languages/checklist_firstrun"
-
+ 
 
   get "translators/index"
   get "translators/index_firstrun"

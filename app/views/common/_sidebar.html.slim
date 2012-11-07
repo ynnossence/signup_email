@@ -1,47 +1,52 @@
-#sidebar.span4
- #sidebar-accordion.side-wrap
+#sidebar.span4 
+ #sidebar-accordion.side-wrap class=yield(:sidebar_class)
   h3.sidebar-ttl Getting Started
 
-  - if current_page?(url_for(:action => 'checklist_firstrun', :controller => "/translators/my_languages"))
-   .widget.checked
-    h4.widget-title
-     i.icon-question
-     |Register Your Details
-    .widget-content
-     p.txt-center Get started with Tolq by signing up for an account. You can use a social account of your email address.
+  .widget.widget-step01.default 
+   h4.widget-title
+    i.icon-question
+    |Register Your Details
+   .widget-content
+    p.txt-center Get started with Tolq by signing up for an account. You can use a social account of your email address.
 
-   .widget.active
-    h4.widget-title
-     i.icon-question
-     |Register Your Language Pairs
-    .widget-content
-     p.txt-center Now that you have task in training, it's time complete your first task to earn some money.
+  .widget.widget-step02.default
+   h4.widget-title
+    i.icon-question
+    |Register Your Language Pairs
+   .widget-content
+    p.txt-center Now that you have task in training, it's time complete your first task to earn some money.
 
-   .widget.default
-    h4.widget-title
-     |Learn about Tolq
-     i.icon-question
-    .widget-content
-     p.txt-center Lorem ipsum dolor si amet.
+  .widget.widget-step03.default
+   h4.widget-title
+    |Accept Training Task
+    i.icon-question
+   .widget-content
+    p.txt-center You will reach Active Status for a language pair when you have successfully completed a certain amount of tasks for that pair.
 
-  - else
-   .widget.active
-    h4.widget-title
-     i.icon-question
-     |Register Your Details
-    .widget-content
-     p.txt-center Get started with Tolq by signing up for an account. You can use a social account of your email address.
+  .widget.widget-step04.default
+   h4.widget-title
+    |Set Your Bid
+    i.icon-question
+   .widget-content
+    p.txt-center To start earning money for tasks, you will need to enter a bid rate for for their language pair. This is the rate you would like to be paid per word.
 
-   .widget.default
-    h4.widget-title
-     i.icon-question
-     |Register Your Language Pairs
-    .widget-content
-     p.txt-center Lorem ipsum dolor si amet.
+  .widget.widget-step05.default
+   h4.widget-title
+    |Accept Active Tasks
+    i.icon-question
+   .widget-content
+    p.txt-center Now that you have completed tasks in training, it's time to complete your first task to earn some money.
 
-   .widget.default
-    h4.widget-title
-     |Learn about Tolq
-     i.icon-question
-    .widget-content
-     p.txt-center Lorem ipsum dolor si amet.
+  .widget.widget-step06.default
+   h4.widget-title
+    |Add a Withdrawal Method
+    i.icon-question
+   .widget-content
+    p.txt-center To be able to withdraw your earnings you will need to add a withdrawal method. This is your bank account and can be set in Account Details.
+
+  .widget.widget-step07.default
+   h4.widget-title
+    |Withdraw Your Earnings
+    i.icon-question
+   .widget-content
+    p.txt-center You're all set! You completed training, completed an active task, and added a withdrawal method. It's time to withdraw your hard earned earnings. 
