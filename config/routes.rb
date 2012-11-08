@@ -1,31 +1,33 @@
 SignupEmail::Application.routes.draw do
 
+  get "order_process/select_pages/default"
+  get "order_process/select_pages/alternative"
+
+
   get "client/mysites"
   get "client/account_details"
+
 
   get "translators/account/default"
   get "translators/account/account_details_firstrun"
 
+
   get "translators/account/nodata"
-
   get "translators/account/edit"
-
   get "translators/account/withdraw_earnings"
   get "translators/account/withdraw_earnings_firstrun"
-
   get "translators/account/editanother"
-
   get "translators/account/withdrawal_method"
   get "translators/account/withdrawal_method_firstrun"
+
 
   get "translators/dashboard/index"
   get "translators/dashboard/index_firstrun"
 
+
   get "translators/my_translations/index"
   get "translators/my_translations/index_firstrun"
   get "translators/my_translations/accept_task_firstrun"
-
-
   get "translators/my_languages/index"
   get "translators/my_languages/index_firstrun"
   get "translators/my_languages/setbid_firstrun"

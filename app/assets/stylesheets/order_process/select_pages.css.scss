@@ -1,0 +1,71 @@
+// Place all the styles related to the OrderProcess::SelectPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.order-process h1,.order-process h2,.order-process h3,
+.order-process h4,.order-process h5,.order-process h6{ line-height: normal; margin: 0; padding: 0; }
+
+.green{ color: #0ba433; }
+
+.top-site-info{ 
+	background: #fafafa; 
+	padding: 20px; 
+	position: relative; 
+	border-bottom: #c7c7c7 1px solid;
+	margin-bottom: 30px; 
+}
+
+.top-site-info .image{ 
+	width: 80px; 
+	height: 80px; 
+	text-align: center; 
+	overflow: hidden; 
+	margin-right: 20px; 
+	float: left; 
+	border: #c7c7c7 1px solid; 
+}
+
+.top-site-info .image img{ 
+	max-width: 100%; 
+}
+
+.top-site-info .info{ 
+	float: left; 
+	padding: 10px 0 0; 
+}
+
+.top-site-info .padright{ 
+	padding-right: 20px; 
+}
+
+.top-site-info .quality-box{ 
+	width: 300px;
+	text-align: center; 
+	padding: 20px 0;
+	background: #eeeeee;
+	border: #c7c7c7 1px solid;
+	float: right; 
+}
+
+.top-site-info .quality-box p{ 
+	margin-bottom: 0;
+}
+
+.full-box{ 
+	border: #c7c7c7 1px solid; 
+	margin-bottom: 30px; 
+	background: #eeeeee;
+	padding: 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+

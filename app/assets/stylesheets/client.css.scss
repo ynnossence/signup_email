@@ -2,15 +2,54 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.padtop30{ padding-top: 30px; }
+.padtop20{ padding-top: 20px; }
+.padtop15{ padding-top: 15px; }
+.padtop10{ padding-top: 10px; }
 
+.site-box{ 
+	border: 1px solid #C7C7C7; 
+	position: relative; 
+	min-height: 120px; 
+	margin-bottom: 30px; 
+	background: #eeeeee; 
+}
+.site-box .image{ 
+	width: 160px; 
+	height: 120px; 
+	overflow: hidden; 
+	position: relative; 
+	float: left; 
+	border-right: 1px solid #C7C7C7; 
+	margin-right: 15px; 
+	background: #fff;
+	text-align: center; 
+}
+.site-box .image .btn{ 
+	position: absolute; 
+	bottom: 15px; 
+	left: 50%; 
+	margin-left: -22px; 
+}
+.site-box .info{ 
+	padding: 5px 0 0; 
+	float: left; 
+}
 
-.site-box{ border: 1px solid #C7C7C7; position: relative; min-height: 120px; margin-bottom: 30px; background: #eeeeee; }
-.site-box .image{ width: 180px; height: 120px; overflow: hidden; position: relative; float: left; border-right: 1px solid #C7C7C7; margin-right: 15px; background: #fff; }
-.site-box .image .btn{ position: absolute; bottom: 15px; left: 50%; margin-left: -22px; }
-.site-box .info{ padding: 5px 0 0; float: left; }
-.site-box .padtop20{ padding-top: 30px; }
-.site-box .info h3{ margin: 0 0 5px 0; padding: 0; line-height: normal; }
-.site-box .info .status{ font-size: 18px; }
-.site-box .info .btn{ margin-left: 0; margin-right: 10px; }
+.site-box .info h3{ 
+	margin: 0 0 5px 0; 
+	padding: 0; 
+	line-height: normal; 
+}
+.site-box .info .status{ 
+	font-size: 18px; 
+}
+.site-box .info .btn{ 
+	margin-left: 0; 
+	margin-right: 10px; 
+}
+
+.site-box .progress{ width: 220px; }
+.box h3{ color: #265297; font-weight: 600; margin: 0; padding: 0; line-height: normal; }
 
 

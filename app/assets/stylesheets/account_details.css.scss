@@ -515,10 +515,14 @@ h3.email-ttl {
 
 #sidebar .widget-title i {
   float: right;
-  margin: 0 0 0;
-  width: 24px;
-  height: 24px;
-  background: url('/assets/icon-question-inactive.png') no-repeat;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  font-family: 'tolq_glyphsregular';
+  text-align: center;
+  font-style: normal;
+  font-size: 38px;
+  /*background: url('/assets/icon-question-inactive.png') no-repeat;*/
 }
 
 #sidebar .widget-title:hover , #sidebar .active .widget-title a{
@@ -531,7 +535,7 @@ h3.email-ttl {
 }
 
 #sidebar .widget-title:hover i ,#sidebar .widget.active .widget-title i {
-  background: url('/assets/icon-question.png') no-repeat;
+  /*background: url('/assets/icon-question.png') no-repeat;*/
 }
 
 #sidebar .checked {
@@ -646,7 +650,7 @@ h3.email-ttl {
 
 .top-nav li {
   display: inline-block;
-  margin: 0 5%;
+  margin: 0 20px;
 }
 
 .top-nav li span.icon {
