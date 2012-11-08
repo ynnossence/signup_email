@@ -576,7 +576,14 @@ h3.email-ttl {
   cursor: pointer;
 }
 
-#sidebar .checked .widget-content{ display: none!important; visibility: hidden; }
+#sidebar .checked .widget-content{ 
+  display: none!important; 
+  visibility: hidden; 
+}
+
+#sidebar .active .widget-content{
+  display: block!important;
+}
 
 
 /** Footer **/
