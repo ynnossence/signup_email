@@ -2,17 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.padtop30{ padding-top: 30px; }
-.padtop20{ padding-top: 20px; }
-.padtop15{ padding-top: 15px; }
-.padtop10{ padding-top: 10px; }
+.padtop30{ padding-top: 30px!important; }
+.padtop20{ padding-top: 20px!important; }
+.padtop15{ padding-top: 15px!important; }
+.padtop10{ padding-top: 10px!important; }
 
 .site-box{ 
 	border: 1px solid #C7C7C7; 
 	position: relative; 
 	min-height: 120px; 
 	margin-bottom: 30px; 
-	background: #eeeeee; 
+	background: #eeeeee;
+	min-width: 410px; 
 }
 .site-box .image{ 
 	width: 160px; 
