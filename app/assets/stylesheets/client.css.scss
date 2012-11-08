@@ -13,16 +13,15 @@
 	min-height: 120px; 
 	margin-bottom: 30px; 
 	background: #eeeeee;
-	min-width: 410px; 
+
 }
 .site-box .image{ 
-	width: 160px; 
+	width: 30%; 
 	height: 120px; 
 	overflow: hidden; 
 	position: relative; 
 	float: left; 
 	border-right: 1px solid #C7C7C7; 
-	margin-right: 15px; 
 	background: #fff;
 	text-align: center; 
 }
@@ -32,9 +31,10 @@
 	left: 50%; 
 	margin-left: -22px; 
 }
-.site-box .info{ 
+.site-box .info{
+	width: 65%; 
 	padding: 5px 0 0; 
-	float: left; 
+	float: right; 
 }
 
 .site-box .info h3{ 
@@ -50,7 +50,7 @@
 	margin-right: 10px; 
 }
 
-.site-box .progress{ width: 220px; }
+.site-box .progress{ width: 90%; }
 .box h3{ color: #265297; font-weight: 600; margin: 0; padding: 0; line-height: normal; }
-
+.clear{ clear: both; }
 
