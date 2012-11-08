@@ -509,6 +509,8 @@ h3.email-ttl {
 
 #sidebar .widget-title a {
   display: block;
+  color: #767676;
+  text-decoration: underline;
 }
 
 #sidebar .widget-title i {
@@ -519,12 +521,13 @@ h3.email-ttl {
   background: url('/assets/icon-question-inactive.png') no-repeat;
 }
 
-#sidebar .widget-title:hover {
+#sidebar .widget-title:hover , #sidebar .active .widget-title a{
   color: #5175ac!important;
 }
-
-#sidebar .checked .widget-title:hover {
+#sidebar .checked { padding-top: 1px; }
+#sidebar .checked .widget-title:hover ,#sidebar .checked .widget-title a{
   color: #fff!important;
+  text-decoration: none;
 }
 
 #sidebar .widget-title:hover i ,#sidebar .widget.active .widget-title i {
@@ -533,6 +536,7 @@ h3.email-ttl {
 
 #sidebar .checked {
   background: #91b066;
+  border: none;
 }
 
 #sidebar .active .widget-title {

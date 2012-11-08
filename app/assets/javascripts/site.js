@@ -58,12 +58,12 @@ if($('#content').hasClass('nofooter')){
   };
 
   $('#sidebar-accordion .active .widget-content').show();
-  $('#sidebar-accordion .default .widget-title').toggle(function(){
-  	$(this).next().slideDown(); 
-  	$(this).parent().addClass('active');
+  $('#sidebar-accordion .default .widget-title i').toggle(function(){
+  	$(this).parent().next().slideDown(); 
+  	$(this).parent().parent().addClass('active');
   },function(){
-  	$(this).next().slideUp();  
-  	$(this).parent().removeClass('active');
+  	$(this).parent().next().slideUp();  
+  	$(this).parent().parent().removeClass('active');
   });
 
   

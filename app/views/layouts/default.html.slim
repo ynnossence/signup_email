@@ -16,8 +16,15 @@ html
   body
    
    #content.nofooter
-    = render "common/header"
-    .row-fluid.clearfix
-     .span12.main-wrap
-      #main.span10.offset1
-       = yield
+    - if controller_name == "client"
+     = render "common/header_client"
+     .row-fluid.clearfix
+      .span12.main-wrap
+       #main.mid-inner.span10.offset1
+        = yield
+    - else
+     = render "common/header"
+     .row-fluid.clearfix
+      .span12.main-wrap
+       #main.span10.offset1
+        = yield
