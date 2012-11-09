@@ -69,8 +69,9 @@ if($('#content').hasClass('nofooter')){
   
 
 
-  var step = 7;
-  for(var i = 1; i <= 7; i++){
+  var step = $('#sidebar-accordion .widget').length;
+  
+  for(var i = 1; i <= step; i++){
 
     if($('#sidebar-accordion').hasClass('step0' +i)){
 

@@ -54,6 +54,61 @@
 }
 
 .site-box .progress{ width: 90%; }
-.box h3{ color: #265297; font-weight: 600; margin: 0; padding: 0; line-height: normal; }
+.box h3{ 
+	color: #265297; 
+	font-weight: 600; 
+	margin: 0; 
+	padding: 0; 
+	line-height: normal; 
+}
 .clear{ clear: both; }
+
+
+
+/**  **/
+.content{ font-size: 14px; }
+.content h2{ 
+	margin: 0 0 5px; 
+	font-weight: 600;
+	line-height: normal;
+}
+.content p{ margin-bottom: 15px; }
+
+
+
+
+
+
+.payment-method{ }
+
+.payment-method .payment-row{ 
+	padding-bottom: 10px; 
+}
+
+.payment-method input[type="text"]{
+	width: 98%;
+}
+
+.payment-method label{
+	display: block;
+	color: #666;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.payment-method .slash{ 
+	line-height: 28px; 
+	margin: 0 0 0 3px;
+	padding-bottom: 5px;
+}
+
+.top-bordered{
+  padding-top: 10px; margin-bottom: 20px;
+	border-top: #cccccc 1px solid;
+}
+
+
+
+
+
 

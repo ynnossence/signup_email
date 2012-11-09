@@ -5,13 +5,22 @@ class ClientController < ApplicationController
   def mysites
   end
 
+  def account_details
+  end
+
+  def register_your_details
+  end
+
+
   def layout
   	case action_name
-  	when "mysites_firstrun"
-      "withchecklist"
-  	else
+    when "mysites"
+      "default"
+  	when "account_details"
   		"default"
-  	end
+    else
+      "clientwithchecklist"
+    end
   end
 
 end

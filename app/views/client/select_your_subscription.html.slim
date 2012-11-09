@@ -1,0 +1,134 @@
+= provide(:sidebar_class,'step02')
+
+.content.row-fluid.padtop30
+ h2 Select a Subscription
+ p Start by adding a subscription for your website. Not sure what to choose? Simply start with a Free plan.
+
+ table.com.tab-rad
+  tr
+   td.info
+    h3 Free
+    p 1 language for this website. Add the language of your choice. Up to a potential of 1 billion users(Chinese)
+   td.price
+    h2 Free
+  tr
+   td.info
+    h3 Starter
+    p 3 languages for this website.
+   td.price
+    h2 $9.95
+  tr
+   td.info
+    h3 Small
+    p 9 languages for this website.
+   td.price
+    h2 $19.95
+  tr
+   td.info
+    h3 Medium
+    p Some flavour text.
+   td.price
+    h2 $49.95
+  tr
+   td.info
+    h3 Large
+    p Some flavour text.
+   td.price
+    h2 $99.95
+    tr
+   td.info
+    h3 Extra Large
+    p Unlimited language for this website. Your website audience can be the entire world!
+   td.price
+    h2 $199.95
+ p.bottomnote Translations provided by community translators are free. Upgrading to professional level translations require a separate purchase.
+
+ br
+ br
+
+ h2 Add a Payment Method
+ p Payment Methods are used to pay translation orders.
+
+ .payment-method.clearfix
+  form action="#" method="#"
+   .row-fluid
+    .payment-row.clearfix
+     .span6
+      fieldset
+       label Card Number:
+       input type="text" 
+     .span6
+      fieldset
+       label Card Type:
+       select.span12
+        option VISA
+
+    .payment-row.clearfix
+     .span6
+      fieldset
+       label CSC:
+       input type="text" 
+     .span6
+      fieldset
+       label Start Date:
+       select.span6.pull-left
+        option Month
+       span.slash 
+        |/
+       select.span6.pull-right
+        option Year
+
+    .payment-row.clearfix
+     .span6
+      fieldset
+       label CVC:
+       input type="text" 
+     .span6
+      fieldset
+       label Start Date:
+       select.span6.pull-left
+        option Month
+       span.slash 
+        |/
+       select.span6.pull-right
+        option Year
+
+    br
+    br
+
+    .payment-row.clearfix
+     .span12
+      fieldset
+       label Your Name:
+       input type="text" 
+
+    .payment-row.clearfix
+     .span12
+      fieldset
+       label Street Address:
+       input type="text" 
+
+    .payment-row.clearfix
+     .span4
+      fieldset
+       label City:
+       input type="text" 
+     .span4
+      fieldset
+       label State/Teritory/County:
+       select.span12
+        option State
+     .span4
+      fieldset
+       label ZIP/Postcode:
+       input type="text" 
+
+    .payment-row.clearfix
+     .span4
+      fieldset
+       label Country:
+       input type="text" 
+
+ .top-bordered.clearfix
+  a.btn.btn-large.pull-left href="#" Cancel
+  a.btn.btn-large.btn-blue.pull-right href="#" Next

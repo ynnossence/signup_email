@@ -1,17 +1,32 @@
 #header
  .row-fluid
-
-  .span12.loggedin
-    .span2 
-     h1#logo 
-      a href=:"/" Tolq
-    .span6.offset1
-     = render "common/navclient"
-    .span3
-     .login-btn.pull-right
-      button.btn Got An Account? Login!
-     .user-info.pull-right
-      .user-pic
-       = image_tag("user-pic.jpg", alt: "User Image")
-      p 
-       a href=:"#profile" Jane Air
+  - if current_page?(url_for(:action => 'register_your_details', :controller => "/client"))
+   .span12.loggedout
+     .span2 
+      h1#logo 
+       a href=:"/" Tolq
+     .span6.offset1
+      = render "common/navclient"
+     .span3
+      .login-btn.pull-right
+       button.btn Got An Account? Login!
+      .user-info.pull-right
+       .user-pic
+        = image_tag("user-pic.jpg", alt: "User Image")
+       p 
+        a href=:"#profile" Jane Air
+  - else
+   .span12.loggedin
+     .span2 
+      h1#logo 
+       a href=:"/" Tolq
+     .span6.offset1
+      = render "common/navclient"
+     .span3
+      .login-btn.pull-right
+       button.btn Got An Account? Login!
+      .user-info.pull-right
+       .user-pic
+        = image_tag("user-pic.jpg", alt: "User Image")
+       p 
+        a href=:"#profile" Jane Air
