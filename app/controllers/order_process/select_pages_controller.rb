@@ -1,6 +1,6 @@
 class OrderProcess::SelectPagesController < ApplicationController
   
-  layout :layout
+  layout "order"
 
   def default
   end
@@ -8,13 +8,10 @@ class OrderProcess::SelectPagesController < ApplicationController
   def alternative
   end
 
-  def layout
-  	case action_name
-  	when "firstruns"
-      "withchecklist"
-  	else
-  		"order"
-  	end
+  def default_with_sidebar
+  end
+
+  def alternative_with_sidebar
   end
 
 end

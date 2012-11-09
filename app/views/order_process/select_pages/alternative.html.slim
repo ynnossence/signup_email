@@ -1,2 +1,63 @@
-<h1>OrderProcess::SelectPages#alternative</h1>
-<p>Find me in app/views/order_process/select_pages/alternative.html.erb</p>
+.top-site-info.clearfix
+ a.close-btn href="#" &nbsp;
+ .pull-left
+  .image
+   = image_tag("site.jpg", alt: "Site Thumbnail")
+  .info
+   h3 apple.com
+   p 
+    span.padright 32 Pages Found
+    a href="#" Missing Pages?
+
+.row-fluid.clearfix
+ .span12.main-wrap
+  #main.mid-inner.span10.offset1
+   .full-box.clearfix
+    .pull-left
+     h3 Full Website
+     p This will order a translation for every page of this site.
+    .pull-right.padtop15
+     a.btn.btn-blue href="#" Machine Translation: $29.72 Order Now
+     a.btn.btn-blue href="#" Pro Translation: $3745.16 Order Now
+
+   .selected-pages
+    .top.clearfix
+     .pull-left
+      h3 Selected Pages
+      p This will order a translation for only the pages you select.
+     .pull-right.padtop10
+      input.inp-search type="text" placeholder="Search Pages" 
+    .content.clearfix
+     .row01.clearfix
+      .pull-left
+       h3 Folder Name
+      .pull-right.txt-right
+       p.padtop5.inline
+        input type="radio" name="folder1"
+        |Machine Translation: $4.95
+       p.padtop5.inline
+        input type="radio" name="folder1"
+        |Pro Translation: $4.95
+
+     .row02.clearfix
+      .pull-left
+       h4 Page Title
+      .pull-right.txt-right
+       pinline
+        input type="radio" name="page1"
+        |Machine Translation: $4.95
+       p.inline
+        input type="radio" name="page1"
+        |Pro Translation: $4.95
+     .row02.clearfix
+      .pull-left
+       h4 Page Title
+      .pull-right.txt-right
+       p.inline
+        input type="radio" name="page2"
+        |Machine Translation: $4.95
+       p.inline
+        input type="radio" name="page2"
+        |Pro Translation: $4.95
+    .bottom.clearfix
+     a.btn.btn-blue.btn-large.pull-right href="#" Total $234.73 Order Now

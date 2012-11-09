@@ -1,0 +1,57 @@
+.top-site-info.clearfix
+ a.close-btn href="#" &nbsp;
+ .pull-left
+  .image
+   = image_tag("site.jpg", alt: "Site Thumbnail")
+  .info
+   h3 apple.com
+   p 
+    span.padright 32 Pages Found
+    a href="#" Missing Pages?
+ .quality-box.pull-right
+  h4.green Professional Translation
+  p
+   a href="#" Change Quality Level
+
+.row-fluid.clearfix
+ .span12.main-wrap
+  #main.mid-inner.span8
+   .full-box.clearfix
+    .pull-left
+     h3 Full Website
+     p This will order a translation for every page of this site.
+    .pull-right.padtop15
+     a.btn.btn-blue href="#" $3745.16 Order Now
+
+   .selected-pages
+    .top.clearfix
+     .pull-left
+      h3 Selected Pages
+      p This will order a translation for only the pages you select.
+     .pull-right.padtop10
+      input.inp-search type="text" placeholder="Search Pages" 
+    .content.clearfix
+     .row01.clearfix
+      .pull-left
+       h3 Folder Name
+      .pull-right.txt-right
+       p.padtop5
+        input type="checkbox" 
+        |Translate this page?
+     .row02.clearfix
+      .pull-left
+       h4 Page Title
+      .pull-right.txt-right
+       p
+        input type="checkbox" 
+        |Translate this page?
+     .row02.clearfix
+      .pull-left
+       h4 Page Title
+      .pull-right.txt-right
+       p
+        input type="checkbox" 
+        |Translate this page?
+    .bottom.clearfix
+     a.btn.btn-blue.btn-large.pull-right href="#" Total $234.73 Order Now
+  = render "order_process/select_pages/shared/sidebar"

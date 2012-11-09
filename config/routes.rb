@@ -2,7 +2,8 @@ SignupEmail::Application.routes.draw do
 
   get "order_process/select_pages/default"
   get "order_process/select_pages/alternative"
-
+  get "order_process/select_pages/default_with_sidebar"
+  get "order_process/select_pages/alternative_with_sidebar"
 
   get "client/mysites"
   get "client/account_details"
