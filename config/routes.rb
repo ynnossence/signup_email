@@ -9,8 +9,8 @@ SignupEmail::Application.routes.draw do
   get "client/account_details"
   get "client/register_your_details"
   get "client/select_your_subscription"
-
-
+  get "client/add_your_website"
+  get "client/add_snippet"
 
 
   get "translators/account/default"

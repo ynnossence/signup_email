@@ -1,0 +1,28 @@
+= provide(:sidebar_class,'step04')
+
+.content.row-fluid.padtop30
+ .site-info.clearfix
+  .pull-left
+   .image
+    = image_tag("site.jpg", alt: "Site Thumbnail")
+   .info
+    h3 www.apple.com
+    select
+     option English
+  .pull-right
+   a.help href="#"
+    i i
+    |Get help from the Tolq Concierge
+
+ div.clear
+
+ h1 Your Snippet
+ h5 To enable Tolq for your site, please copy this snippet to every page on your site before the closing body tag:
+ textarea.txt-large
+  |Some codes here ...
+
+ p.clearfix
+  a.btn.btn-large.pull-left href="#" Cancel
+  a.btn.btn-large.btn-blue.pull-right href="#" Next
+  a.btn.btn-large.pull-right href="#" Back
+

@@ -73,9 +73,17 @@
 	line-height: normal;
 }
 .content p{ margin-bottom: 15px; }
+.content .btn.pull-right{ margin-left: 10px; }
 
-
-
+input.input-website{ 
+	padding: 20px; 
+	width: 94%!important;
+	line-height: normal;
+	height: 32px;
+	color: #cdcdcd!important;
+	font-size: 30px!important;
+	margin-bottom: 20px;
+}
 
 
 
@@ -107,6 +115,47 @@
 	border-top: #cccccc 1px solid;
 }
 
+
+.site-info{  }
+.site-info .image{ 
+	width: 80px; 
+	height: 80px; 
+	text-align: center; 
+	overflow: hidden; 
+	margin-right: 20px; 
+	float: left; 
+	border: #c7c7c7 1px solid; 
+}
+
+.site-info .image img{ max-width: 100%; }
+.site-info .info{ float: left; }
+.site-info .info h3{ line-height: normal; }
+
+a.help{
+	background: #b6d7a8;
+	border: #BDBDBD 1px solid;
+	padding: 20px;
+	color: #467820;
+	font-size: 16px;
+	text-decoration: none;
+	float: right;
+	padding-left: 50px;
+	position: relative;
+}
+
+a.help i{ 
+	font-family: 'tolq_glyphsregular'; 
+	font-size: 50px;
+	font-style: normal;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+}
+
+textarea.txt-large{ 
+	width: 99%;
+	height: 130px;
+}
 
 
 
