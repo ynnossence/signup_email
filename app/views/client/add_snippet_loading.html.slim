@@ -17,7 +17,9 @@
  div.clear
 
  h1 Your Snippet
- h5 To enable Tolq for your site, please copy this snippet to every page on your site before the closing body tag:
+ h4.detected
+  = image_tag("loading.png", alt: "Loading") 
+  |Tolq is currently looking for the snippet on your website...
  textarea.txt-large
   |Some codes here ...
 
