@@ -3,7 +3,7 @@
   h3 Language Pairs
   p Language pairs are used to obtain tasks for you. 
  .fr
-  = link_to "Register a Language Pair", {:controller => "my_languages", :action => "index"} , :class => "btn btn-mid pull-right"
+  a.btn.btn-mid.pull-right.fancybox href="#pop-register" Register a Language Pair
 
 .row.lang-row
  .span2.left-ttl
@@ -123,4 +123,22 @@
       br has been marked for abuse.
      p
       a href="#" Please contact support
-  
+
+.hidden
+ #pop-register
+  h2 Your Native Language
+  .gray-box.clearfix
+   select.pull-right
+    option English
+   h3 Select your native language
+   p Your native language is used as the base language for language pairs.
+
+  .gray-box2.gray-box.clearfix
+   input.inp-search.pull-left placeholder="Start typing the language name or click to select from the language list"
+   a.btn.btn-blue.btn-mid.pull-right href="#" Add Language
+
+  div.clear
+
+  .top-bordered.clearfix
+   a.btn.btn-blue.btn-mid.pull-right href="#" Register
+   a.btn.btn-mid.pull-right href="#" Back

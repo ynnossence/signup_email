@@ -10,22 +10,21 @@
     select
      option English
   .pull-right
-   a.help href="#"
+   a.btn.btn-green.btn-large.pull-right href="#"
     i i
     |Get help from the Tolq Concierge
 
  div.clear
 
  h1 Your Snippet
- h4.detected
+ h4.black
   = image_tag("loading.png", alt: "Loading") 
   |Tolq is currently looking for the snippet on your website...
- textarea.txt-large
-  |Some codes here ...
+ br
+ br
 
- p.clearfix
+ p.top-bordered.clearfix
   a.btn.btn-large.pull-left href="#" Cancel
-  a.btn.btn-large.btn-blue.pull-right href="#" Next
   a.btn.btn-large.pull-right href="#" Back
 
  .top-bordered.instruction
@@ -33,7 +32,7 @@
  br
  br 
 
- .clearfix
+ .clearfix.faq-section
   .span6
    h2 What is a Snippet?
    p A snippet is a specific piece of code that you can place in your websites' HTML code. It allows the Tolq scanner to read your website structure as well as display translations.

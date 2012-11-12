@@ -12,7 +12,8 @@ SignupEmail::Application.routes.draw do
   get "client/add_your_website"
   get "client/add_snippet"
   get "client/add_snippet_loading"
-
+  get "client/add_snippet_detected"
+  get "client/add_snippet_not_detected"
 
   get "translators/account/default"
   get "translators/account/account_details_firstrun"

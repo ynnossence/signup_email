@@ -9,6 +9,10 @@
 .padtop15{ padding-top: 15px!important; }
 .padtop10{ padding-top: 10px!important; }
 .padtop5{ padding-top: 5px!important; }
+.black{ color: #000!important; }
+.green{ color: #38761d!important }
+.gray{ color: #9a9a9a; }
+.red{ color: #d0192f!important; }
 
 .site-box{ 
 	border: 1px solid #C7C7C7; 
@@ -83,8 +87,18 @@ input.input-website{
 	color: #cdcdcd!important;
 	font-size: 30px!important;
 	margin-bottom: 20px;
+	color: #000!important;
 }
 
+input::-webkit-input-placeholder {
+    color:    #666;
+}
+input:-moz-placeholder {
+    color:    #666;
+}
+input:-ms-input-placeholder {
+    color:    #666;
+}
 
 
 .payment-method{ }
@@ -143,12 +157,17 @@ a.help{
 	position: relative;
 }
 
-a.help i{ 
+a.btn-green{ 
+	padding: 15px 10px 15px 50px;
+	position: relative;
+} 
+
+a.btn-green i{ 
 	font-family: 'tolq_glyphsregular'; 
 	font-size: 50px;
 	font-style: normal;
 	position: absolute;
-	top: 20px;
+	top: 0px;
 	left: 0px;
 }
 
@@ -166,6 +185,6 @@ textarea.txt-large{
 	padding-right: 30px; 
 }
 
-
-
+.faq-section p{ text-align: justify; }
+.faq-section h2{ color: #265297; }
 

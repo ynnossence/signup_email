@@ -13,6 +13,13 @@ $(document).ready(function(){
     return false;
   });
 */
+
+$(".fancybox").fancybox();
+
+$('.pop-over').popover({ 
+  'placement' : 'top'
+});
+
 var full = $('#content').height();
 var contenthyt = full - 148;
 var contenthyt2 = full - 116;  
@@ -119,5 +126,8 @@ if($('#content').hasClass('nofooter')){
   },function(){
     $(this).removeClass("selected");
   });
+
+
+  
   
 });
