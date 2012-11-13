@@ -1,10 +1,10 @@
-#header
+header#header
  .row-fluid
   - if current_page?(url_for(:action => 'register_your_details', :controller => "/client"))
    .span12.loggedout
      .span2 
       h1#logo 
-       a href=:"/" Tolq
+       a href="/" Tolq
      .span6.offset1
       = render "common/navclient"
      .span3
@@ -14,12 +14,12 @@
        .user-pic
         = image_tag("user-pic.jpg", alt: "User Image")
        p 
-        a href=:"#profile" Jane Air
+        a href="#profile" Jane Air
   - else
    .span12.loggedin
      .span2 
       h1#logo 
-       a href=:"/" Tolq
+       a href="/" Tolq
      .span6.offset1
       = render "common/navclient"
      .span3
@@ -29,4 +29,4 @@
        .user-pic
         = image_tag("user-pic.jpg", alt: "User Image")
        p 
-        a href=:"#profile" Jane Air
+        a href="#profile" Jane Air

@@ -1,37 +1,22 @@
-ul.top-nav
- - if controller?('my_translations')
-  li.nav01.active: a href=:"#" 
+nav.top-nav
+ ul
+  li: a href="#" 
    span.icon 
-   |Dashboard
- - else
-  li.nav01: a href=:"#" 
-   span.icon 
+    span b
    |Dashboard
 
- - if controller?('my_translations')
-  li.nav02.active: a href=:"#" 
+  li: a href="#" 
    span.icon 
-   |My Translations
- - else
-  li.nav02: a href=:"#" 
-   span.icon 
+    span d
    |My Translations
 
- - if controller?('my_languages')
-  li.nav03.active: a href=:"#" 
+  li: a href="#" 
    span.icon 
-   |My Languages
- - else
-  li.nav03: a href=:"/my_languages/index" 
-   span.icon 
+    span e
    |My Languages
  
- - if controller?('account')
-  li.nav04.active: a href=:"/account_details/default" 
+  li: a href="#" 
    span.icon 
-   |Account Details
- - else
-  li.nav04: a href=:"#" 
-   span.icon 
+    span i
    |Account Details
  

@@ -23,14 +23,6 @@ body {
   text-align: center;
 }
 
-.fl {
-  float: left;
-}
-
-.fr {
-  float: right;
-}
-
 a{ 
   text-decoration: underline;
   color: #2e83d0; 
@@ -673,15 +665,14 @@ h3.email-ttl {
   font-size: 16px;
 }
 
-.top-nav {
-  margin: 0 auto;
-  text-align: center;
-}
 
+/** Top Navigation **/
+/**-------------------------**/
 .top-nav ul {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  text-align: center;
 }
 
 .top-nav li {
@@ -695,28 +686,23 @@ h3.email-ttl {
   display: block;
   margin-bottom: 10px;
   margin: 0 auto;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'tolq_glyphsregular';
+  position: relative;
+}
+
+.top-nav li span.icon span{ 
+  top: 20px;
+  left: 50%;
+  margin-left: -50px; 
+  position: absolute;
 }
 
 .top-nav li a {
   color: #888888;
   text-decoration: none;
   text-align: center;
-}
-
-.top-nav .nav01 .icon {
-  background: url('/assets/icon-dash.png') no-repeat top;
-}
-
-.top-nav .nav02 .icon {
-  background: url('/assets/icon-trans.png') no-repeat top;
-}
-
-.top-nav .nav03 .icon {
-  background: url('/assets/icon-lang.png') no-repeat top;
-}
-
-.top-nav .nav04 .icon {
-  background: url('/assets/icon-account.png') no-repeat top;
 }
 
 .top-nav li a:hover {
@@ -732,9 +718,6 @@ h3.email-ttl {
   font-weight: bold;
 }
 
-/*.mid-inner {
-  padding: 25px 0 0 0;
-}*/
 
 .mid-inner .mid-item {
   margin-top: 30px;

@@ -1,7 +1,7 @@
-.row-fluid.mid-item.balance.nodatastate
- .span2.left-ttl
+article.row-fluid.mid-item.balance.nodatastate
+ aside.span2.left-ttl
   h2 Balance
- .span10
+ section.span10
    .default
     .box.clearfix
      .pull-left
@@ -14,7 +14,7 @@
       span Transaction Fee: 3.20 USD
    .dataoff
     .box.clearfix
-     a.btn.btn-mid href=:"#reg" Register a Payment Method
+     a.btn.btn-mid href="#reg" Register a Payment Method
    .editcontent
     .box.clearfix
      .pull-left
@@ -22,8 +22,8 @@
       p.bank 
        span You will be charged a transaction fee of 3.20 USD
      .pull-right.wrap-wd
-      a.btn.btn-mid.btn-blue.pull-right href=:"#withdraw" Withdraw 1,000,000.00 USD
-      a.btn.btn-mid.pull-right href=:"#cancel" Cancel
+      a.btn.btn-mid.btn-blue.pull-right href="#withdraw" Withdraw 1,000,000.00 USD
+      a.btn.btn-mid.pull-right href="#cancel" Cancel
    .confcontent
     .box.clearfix
      .pull-left
@@ -31,8 +31,8 @@
       p.bank 
        span You will be charged a transaction fee of 3.20 USD
      .pull-right.wrap-wd
-      a.btn.btn-mid.btn-blue.pull-right href=:"#withdraw" Withdraw 1,000,000.00 USD
-      a.btn.btn-mid.pull-right href=:"#cancel" Cancel
+      a.btn.btn-mid.btn-blue.pull-right href="#withdraw" Withdraw 1,000,000.00 USD
+      a.btn.btn-mid.pull-right href="#cancel" Cancel
    .editinfocontent
     .box.clearfix
      .span8
@@ -62,21 +62,21 @@
       p All payment methods conform to international wire transfer standards.
       p To find out the details for your account, contact your bank. 
 
-.row-fluid.mid-item.accountinfo
-  .span2.left-ttl
+article.row-fluid.mid-item.accountinfo
+  aside.span2.left-ttl
    h2 Account Info
    p 
     = link_to "Edit", {:controller => "account", :action => "edit"} , :class => "btn btn-edit pull-right" 
-  .span10
+  section.span10
    .default
     .box.clearfix
-     a.change-pass href=:"#changepass" Change your password
+     a.change-pass href="#changepass" Change your password
      .account-pic
       = image_tag("account-pic.jpg", alt: "Account Image")
      ul.info
       li.name: h3 Jane Air
       li.position: h4 Personal
-      li.email: a href=:"mailto:jane@outlook.com" jane@outlook.com
+      li.email: a href="mailto:jane@outlook.com" jane@outlook.com
       li.tax: span.tax-wrap 
        strong Tax ID: 
        |093 149 237 A
@@ -139,14 +139,14 @@
       input type=:password name=:newpass2 id=:newpass2
      .col.col04
        p 
-        a.btn.btn-blue.btn-small href=:"#change" Change
+        a.btn.btn-blue.btn-small href="#change" Change
        p 
-        a.btn.btn-small href=:"#cancel" Cancel
+        a.btn.btn-small href="#cancel" Cancel
 
-.row-fluid.mid-item.withdrawals.nodatastate
-  .span2.left-ttl
+article.row-fluid.mid-item.withdrawals.nodatastate
+  aside.span2.left-ttl
    h2 Withdrawals
-  .span10
+  section.span10
    .default
     .box.clearfix.nopad
      table.box-tab
@@ -157,7 +157,7 @@
        td.col02 
         |12 January 2012
        td.col03
-        a.btn.btn-small href=:"#moreinfo" More Info
+        a.btn.btn-small href="#moreinfo" More Info
       tr
        td.col01 
         strong 1,534,392.25 
@@ -165,7 +165,7 @@
        td.col02 
         |12 February 2012
        td.col03
-        a.btn.btn-small href=:"#moreinfo" More Info
+        a.btn.btn-small href="#moreinfo" More Info
       tr
        td.col01 
         strong 0.01 
@@ -173,7 +173,7 @@
        td.col02 
         |12 March 2012
        td.col03
-        a.btn.btn-small href=:"#moreinfo" More Info
+        a.btn.btn-small href="#moreinfo" More Info
       tr.last
        td.col01 
         strong 12,334.20 
@@ -181,15 +181,15 @@
        td.col02 
         |12 April 2012
        td.col03
-        a.btn.btn-small href=:"#moreinfo" More Info
+        a.btn.btn-small href="#moreinfo" More Info
    .dataoff
     .box.clearfix
      p.note Withdrawals you make will appear here 
 
-.row-fluid.mid-item.invoices.nodatastate
- .span2.left-ttl
+article.row-fluid.mid-item.invoices.nodatastate
+ aside.span2.left-ttl
   h2 Invoices
- .span10
+ section.span10
   .default
    .box.clearfix.nopad
     table.box-tab
@@ -199,36 +199,36 @@
       td.col02 
        |12 January 2012
       td.col03
-       a.btn.btn-small href=:"#download" Download
+       a.btn.btn-small href="#download" Download
      tr
       td.col01 
        strong Invoice 40392
       td.col02 
        |12 February 2012
       td.col03
-       a.btn.btn-small href=:"#download" Download
+       a.btn.btn-small href="#download" Download
      tr
       td.col01 
        strong Invoice 14123
       td.col02 
        |12 March 2012
       td.col03
-       a.btn.btn-small href=:"#download" Download
+       a.btn.btn-small href="#download" Download
      tr.last
       td.col01 
        strong Invoice 32412
       td.col02 
        |12 April 2012
       td.col03
-       a.btn.btn-small href=:"#download" Download
+       a.btn.btn-small href="#download" Download
   .dataoff
     .box.clearfix
      p.note When you earn money, invoices will appear here
 
-.row-fluid.mid-item
- .span2.left-ttl
+article.row-fluid.mid-item
+ aside.span2.left-ttl
   h2 Preferences
- .span10
+ section.span10
   .box.clearfix.pref
    p 
     input#ch01.cb type="checkbox"

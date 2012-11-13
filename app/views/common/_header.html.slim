@@ -1,4 +1,4 @@
-#header
+header#header
  .row-fluid
   
 
@@ -6,7 +6,7 @@
    .span12.loggedout
      .span2 
       h1#logo 
-       a href=:"/" Tolq
+       a href="/" Tolq
      .span6.offset1
       = render "common/topnav"
      .span3
@@ -16,13 +16,13 @@
        .user-pic
         = image_tag("user-pic.jpg", alt: "User Image")
        p 
-        a href=:"#profile" Jane Air
+        a href="#profile" Jane Air
 
   - else
    .span12.loggedin
     .span2 
      h1#logo 
-      a href=:"/" Tolq
+      a href="/" Tolq
     .span6.offset1
      = render "common/topnav"
     .span3
@@ -32,6 +32,6 @@
       .user-pic
        = image_tag("user-pic.jpg", alt: "User Image")
       p 
-       a href=:"#profile" Jane Air
+       a href="#profile" Jane Air
      .logout-box
-      a.logout href:="#logout" Logout
+      a.logout href="#logout" Logout
